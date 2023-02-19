@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders03TipDonusumleri", "Der
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders04Operatorler", "Ders04Operatorler\Ders04Operatorler.csproj", "{986B13C7-33E6-4AC6-8C55-553D489A19A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders05KosulYapilari", "Ders05KosulYapilari\Ders05KosulYapilari.csproj", "{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{986B13C7-33E6-4AC6-8C55-553D489A19A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{986B13C7-33E6-4AC6-8C55-553D489A19A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{986B13C7-33E6-4AC6-8C55-553D489A19A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
