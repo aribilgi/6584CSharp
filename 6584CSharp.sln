@@ -5,13 +5,19 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders01Degiskenler", "Ders01Degiskenler\Ders01Degiskenler.csproj", "{517AE95D-965C-46C9-8AEB-C6B728342529}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders02Diziler", "Ders02Diziler\Ders02Diziler.csproj", "{D478EEB0-AA3B-4C1A-87A9-3DC2FD6F23F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders02Diziler", "Ders02Diziler\Ders02Diziler.csproj", "{D478EEB0-AA3B-4C1A-87A9-3DC2FD6F23F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders03TipDonusumleri", "Ders03TipDonusumleri\Ders03TipDonusumleri.csproj", "{23E46F9B-6563-46C5-A75C-071FF0B13DBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders03TipDonusumleri", "Ders03TipDonusumleri\Ders03TipDonusumleri.csproj", "{23E46F9B-6563-46C5-A75C-071FF0B13DBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders04Operatorler", "Ders04Operatorler\Ders04Operatorler.csproj", "{986B13C7-33E6-4AC6-8C55-553D489A19A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders04Operatorler", "Ders04Operatorler\Ders04Operatorler.csproj", "{986B13C7-33E6-4AC6-8C55-553D489A19A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders05KosulYapilari", "Ders05KosulYapilari\Ders05KosulYapilari.csproj", "{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders05KosulYapilari", "Ders05KosulYapilari\Ders05KosulYapilari.csproj", "{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders06Donguler", "Ders06Donguler\Ders06Donguler.csproj", "{2EAC2C9B-4199-4B70-9919-3D42EE1D0DBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders07Metotlar", "Ders07Metotlar\Ders07Metotlar.csproj", "{C8FD4F5D-6843-49D9-A1FD-A19278C2B893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders08Classlar", "Ders08Classlar\Ders08Classlar.csproj", "{1E078470-AB22-4371-B754-8FB888BBF98D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBD00338-E77F-44DB-85D2-D8A95CE32E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EAC2C9B-4199-4B70-9919-3D42EE1D0DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAC2C9B-4199-4B70-9919-3D42EE1D0DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAC2C9B-4199-4B70-9919-3D42EE1D0DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAC2C9B-4199-4B70-9919-3D42EE1D0DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FD4F5D-6843-49D9-A1FD-A19278C2B893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FD4F5D-6843-49D9-A1FD-A19278C2B893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FD4F5D-6843-49D9-A1FD-A19278C2B893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FD4F5D-6843-49D9-A1FD-A19278C2B893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E078470-AB22-4371-B754-8FB888BBF98D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E078470-AB22-4371-B754-8FB888BBF98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E078470-AB22-4371-B754-8FB888BBF98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E078470-AB22-4371-B754-8FB888BBF98D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
