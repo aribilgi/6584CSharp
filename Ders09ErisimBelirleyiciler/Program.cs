@@ -6,8 +6,10 @@
  * private : Yalnızca bulunduğu sınıftan erişilebilir
  * 1 öğe sadece 1 tane erişim belirteci alabilir.
  */
+// Bir projeden (örneğin Ders09ErisimBelirleyiciler) solution içerisndeki başka bir projeye (örneğin Ders08Classlar) erişmek için 2 proje arasında bağlantı kurmalıyız.
+// Bu bağlantıyı projemizdeki dependencies e sağ tıklayıp add project reference a tıklayıp açılan pencereden bağlanmak istediğimiz projeye tik atık tamam diyerek pencereyi kapatıp bağlantı kurabiliriz.
 
-
+using Ders08Classlar;
 using Ders09ErisimBelirleyiciler; // bu satır Kullanici class ını bu sayfada kullanabilmemiz için
 
 internal class Program
@@ -31,7 +33,9 @@ internal class Program
         {
             Adi = "Ali", Soyadi = "Can"
         };
-
+        SiniftaMetotKullanimi siniftaMetot = new(); // bu class Ders08Classlar projesinden geldi
+        var sonuc = siniftaMetot.LoginKontrol(kullanici.Adi, kullanici.Soyadi);
+        Console.WriteLine("Login Sonucu : " + sonuc);
     }
 }
 class Kategori

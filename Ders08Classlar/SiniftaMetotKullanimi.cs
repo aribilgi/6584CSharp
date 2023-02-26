@@ -1,6 +1,6 @@
 ﻿namespace Ders08Classlar
 {
-    internal class SiniftaMetotKullanimi // internal = erişim belirteci
+    public class SiniftaMetotKullanimi // internal = erişim belirteci
     {
         string kurucuMetot; // başında erişim belirteci yazmazsak sadece bulunduğu süslü parantez içinden erişebiliriz.
         public SiniftaMetotKullanimi() // ctor yazıp klavyeden 2 kez tab a basarak oluşabilir
@@ -8,7 +8,7 @@
             kurucuMetot = "sınıflarda kurucu metot(constructor) sistemi vardır ve sınıftan new ile bir nesne oluşturduğumuzda ilk önce bu metot çalışır!";
             Console.WriteLine(kurucuMetot);
         }
-        internal bool LoginKontrol(string kullanici, string sifre)
+        public bool LoginKontrol(string kullanici, string sifre)
         {
             if (kullanici == "admin" && sifre == "123456")
             {
