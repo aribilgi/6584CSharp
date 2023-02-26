@@ -5,7 +5,7 @@
         string kurucuMetot; // başında erişim belirteci yazmazsak sadece bulunduğu süslü parantez içinden erişebiliriz.
         public SiniftaMetotKullanimi() // ctor yazıp klavyeden 2 kez tab a basarak oluşabilir
         {
-            kurucuMetot = "sınıflarda kurucu metot(constructor) sistemi vardır ve sınıftan new ile bir nesne oluşturduğumuzda il önce bu metot çalışır!";
+            kurucuMetot = "sınıflarda kurucu metot(constructor) sistemi vardır ve sınıftan new ile bir nesne oluşturduğumuzda ilk önce bu metot çalışır!";
             Console.WriteLine(kurucuMetot);
         }
         internal bool LoginKontrol(string kullanici, string sifre)
