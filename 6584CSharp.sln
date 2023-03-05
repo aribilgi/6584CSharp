@@ -25,13 +25,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders10OzgenlerProperties", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders11YapilarStruct", "Ders11YapilarStruct\Ders11YapilarStruct.csproj", "{F914FA51-F054-4C69-B32A-C499E604BFD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders12StringSinifi", "Ders12StringSinifi\Ders12StringSinifi.csproj", "{0D05CE5D-DB99-46B3-BFDE-CB016ED133E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders12StringSinifi", "Ders12StringSinifi\Ders12StringSinifi.csproj", "{0D05CE5D-DB99-46B3-BFDE-CB016ED133E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders13Enumlar", "Ders13Enumlar\Ders13Enumlar.csproj", "{3805710F-9CE3-4F98-A544-A6FE59950E0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders13Enumlar", "Ders13Enumlar\Ders13Enumlar.csproj", "{3805710F-9CE3-4F98-A544-A6FE59950E0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders14KalitimInheritance", "Ders14KalitimInheritance\Ders14KalitimInheritance.csproj", "{42839A73-3C60-4B16-965C-3A975A0E4427}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders14KalitimInheritance", "Ders14KalitimInheritance\Ders14KalitimInheritance.csproj", "{42839A73-3C60-4B16-965C-3A975A0E4427}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders15KapsullemeEncapsulation", "Ders15KapsullemeEncapsulation\Ders15KapsullemeEncapsulation.csproj", "{CF7D88C7-5D37-4216-A893-0537DBC1BF93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders15KapsullemeEncapsulation", "Ders15KapsullemeEncapsulation\Ders15KapsullemeEncapsulation.csproj", "{CF7D88C7-5D37-4216-A893-0537DBC1BF93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders16InterfacesArayuzler", "Ders16InterfacesArayuzler\Ders16InterfacesArayuzler.csproj", "{DA8573D1-C6B7-42C4-888F-4D4CD052754E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders17AbstractSiniflar", "Ders17AbstractSiniflar\Ders17AbstractSiniflar.csproj", "{2B313BA2-EFEA-4C55-A200-DC605E8A70F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders18Koleksiyonlar", "Ders18Koleksiyonlar\Ders18Koleksiyonlar.csproj", "{85DAE7B3-316F-465A-8D46-531445D6A5F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders19ClassLibraryKullanimi", "Ders19ClassLibraryKullanimi\Ders19ClassLibraryKullanimi.csproj", "{3662060C-C8A9-4FFA-86C0-81C22728271A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{B29025C3-A9D0-4675-B935-EB0B305B8461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms\WindowsForms.csproj", "{2831304B-1D95-48A4-88C3-D9922C6BF892}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +111,30 @@ Global
 		{CF7D88C7-5D37-4216-A893-0537DBC1BF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF7D88C7-5D37-4216-A893-0537DBC1BF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF7D88C7-5D37-4216-A893-0537DBC1BF93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8573D1-C6B7-42C4-888F-4D4CD052754E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8573D1-C6B7-42C4-888F-4D4CD052754E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8573D1-C6B7-42C4-888F-4D4CD052754E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8573D1-C6B7-42C4-888F-4D4CD052754E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B313BA2-EFEA-4C55-A200-DC605E8A70F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B313BA2-EFEA-4C55-A200-DC605E8A70F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B313BA2-EFEA-4C55-A200-DC605E8A70F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B313BA2-EFEA-4C55-A200-DC605E8A70F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85DAE7B3-316F-465A-8D46-531445D6A5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85DAE7B3-316F-465A-8D46-531445D6A5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85DAE7B3-316F-465A-8D46-531445D6A5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85DAE7B3-316F-465A-8D46-531445D6A5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3662060C-C8A9-4FFA-86C0-81C22728271A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3662060C-C8A9-4FFA-86C0-81C22728271A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3662060C-C8A9-4FFA-86C0-81C22728271A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3662060C-C8A9-4FFA-86C0-81C22728271A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29025C3-A9D0-4675-B935-EB0B305B8461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29025C3-A9D0-4675-B935-EB0B305B8461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29025C3-A9D0-4675-B935-EB0B305B8461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29025C3-A9D0-4675-B935-EB0B305B8461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2831304B-1D95-48A4-88C3-D9922C6BF892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2831304B-1D95-48A4-88C3-D9922C6BF892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2831304B-1D95-48A4-88C3-D9922C6BF892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2831304B-1D95-48A4-88C3-D9922C6BF892}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
