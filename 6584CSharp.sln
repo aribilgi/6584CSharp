@@ -37,13 +37,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders16InterfacesArayuzler",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders17AbstractSiniflar", "Ders17AbstractSiniflar\Ders17AbstractSiniflar.csproj", "{2B313BA2-EFEA-4C55-A200-DC605E8A70F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders18Koleksiyonlar", "Ders18Koleksiyonlar\Ders18Koleksiyonlar.csproj", "{85DAE7B3-316F-465A-8D46-531445D6A5F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders18Koleksiyonlar", "Ders18Koleksiyonlar\Ders18Koleksiyonlar.csproj", "{85DAE7B3-316F-465A-8D46-531445D6A5F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ders19ClassLibraryKullanimi", "Ders19ClassLibraryKullanimi\Ders19ClassLibraryKullanimi.csproj", "{3662060C-C8A9-4FFA-86C0-81C22728271A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ders19ClassLibraryKullanimi", "Ders19ClassLibraryKullanimi\Ders19ClassLibraryKullanimi.csproj", "{3662060C-C8A9-4FFA-86C0-81C22728271A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{B29025C3-A9D0-4675-B935-EB0B305B8461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{B29025C3-A9D0-4675-B935-EB0B305B8461}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms\WindowsForms.csproj", "{2831304B-1D95-48A4-88C3-D9922C6BF892}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlEgitim", "SqlEgitim", "{46A4C04A-605D-4FA8-8C3E-598337D3FDF8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\ARIBİLGİ\Desktop\SQLEgitim1.sql = ..\..\Users\ARIBİLGİ\Desktop\SQLEgitim1.sql
+		..\..\Users\ARIBİLGİ\Desktop\SQLEgitim2.sql = ..\..\Users\ARIBİLGİ\Desktop\SQLEgitim2.sql
+		..\..\Users\ARIBİLGİ\Desktop\SQLEgitim3.sql = ..\..\Users\ARIBİLGİ\Desktop\SQLEgitim3.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
