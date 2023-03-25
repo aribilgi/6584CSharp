@@ -50,6 +50,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlEgitim", "SqlEgitim", "{
 		..\..\Users\ARIBİLGİ\Desktop\SQLEgitim1.sql = ..\..\Users\ARIBİLGİ\Desktop\SQLEgitim1.sql
 		..\..\Users\ARIBİLGİ\Desktop\SQLEgitim2.sql = ..\..\Users\ARIBİLGİ\Desktop\SQLEgitim2.sql
 		..\..\Users\ARIBİLGİ\Desktop\SQLEgitim3.sql = ..\..\Users\ARIBİLGİ\Desktop\SQLEgitim3.sql
+		..\..\Users\ARIBİLGİ\Desktop\SqlEğitim\SQLEgitim4.sql = ..\..\Users\ARIBİLGİ\Desktop\SqlEğitim\SQLEgitim4.sql
+		..\..\Users\ARIBİLGİ\Desktop\SqlEğitim\SQLEgitim5-sp-fn.sql = ..\..\Users\ARIBİLGİ\Desktop\SqlEğitim\SQLEgitim5-sp-fn.sql
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsADONet", "WindowsFormsADONet\WindowsFormsADONet.csproj", "{15890CA1-A160-4099-B575-BCA099F311CE}"

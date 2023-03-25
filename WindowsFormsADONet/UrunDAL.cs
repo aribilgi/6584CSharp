@@ -50,6 +50,19 @@ namespace WindowsFormsADONet
             connection.Close();
             return table;
         }
+        public DataTable UrunleriDataTablelaGetir(string kelime)
+        {
+            DataTable table = new DataTable();
+            BaglantiyiAc();
+            SqlCommand sqlCommand = new SqlCommand("select * from urunler where urunadi like @kelime", connection);
+            sqlCommand.Parameters.AddWithValue("@kelime", "%" + kelime + "%"); // sql injection güvenlik açığına sebep olmamak için gelen kelimeyi direk sql cümlesine eklemiyoruz!
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            table.Load(sqlDataReader); // veritabanından çekilen verileri table a yükle
+            sqlDataReader.Close(); // kapat
+            sqlCommand.Dispose(); // yoket
+            connection.Close();
+            return table;
+        }
         public int Add(Urun urun)
         {
             BaglantiyiAc();
@@ -87,6 +100,25 @@ namespace WindowsFormsADONet
             sqlCommand.Dispose(); // yoket
             connection.Close(); // bağlantıyı kapat
             return islemSonucu;
+        }
+        public Urun Get(int id)
+        {
+            Urun urun = new Urun();
+            BaglantiyiAc();
+            SqlCommand sqlCommand = new SqlCommand("select * from urunler where Id=@UrunId", connection);
+            sqlCommand.Parameters.AddWithValue("@UrunId", id);
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            if (sqlDataReader.Read())
+            {
+                urun.Id = Convert.ToInt32(sqlDataReader["Id"]);
+                urun.UrunFiyati = Convert.ToDecimal(sqlDataReader["UrunFiyati"]);
+                urun.UrunAdi = sqlDataReader["UrunAdi"].ToString();
+                urun.StokMiktari = Convert.ToInt32(sqlDataReader["StokMiktari"]);
+            }
+            sqlDataReader.Close();
+            sqlCommand.Dispose(); // yoket
+            connection.Close();
+            return urun;
         }
     }
 }
