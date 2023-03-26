@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUunAdi = new System.Windows.Forms.TextBox();
+            this.txtUrunAdi = new System.Windows.Forms.TextBox();
             this.txtUrunFiyati = new System.Windows.Forms.TextBox();
             this.txtStokMiktari = new System.Windows.Forms.TextBox();
             this.btnEkle = new System.Windows.Forms.Button();
@@ -47,11 +47,13 @@
             // 
             // dgvUrunler
             // 
+            this.dgvUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUrunler.Location = new System.Drawing.Point(12, 46);
             this.dgvUrunler.Name = "dgvUrunler";
             this.dgvUrunler.Size = new System.Drawing.Size(508, 392);
             this.dgvUrunler.TabIndex = 0;
+            this.dgvUrunler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUrunler_CellClick);
             // 
             // txtAra
             // 
@@ -59,6 +61,7 @@
             this.txtAra.Name = "txtAra";
             this.txtAra.Size = new System.Drawing.Size(100, 20);
             this.txtAra.TabIndex = 1;
+            this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
             // 
             // btnAra
             // 
@@ -68,6 +71,7 @@
             this.btnAra.TabIndex = 2;
             this.btnAra.Text = "Ara";
             this.btnAra.UseVisualStyleBackColor = true;
+            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // groupBox1
             // 
@@ -76,7 +80,7 @@
             this.groupBox1.Controls.Add(this.btnEkle);
             this.groupBox1.Controls.Add(this.txtStokMiktari);
             this.groupBox1.Controls.Add(this.txtUrunFiyati);
-            this.groupBox1.Controls.Add(this.txtUunAdi);
+            this.groupBox1.Controls.Add(this.txtUrunAdi);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -114,12 +118,12 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Stok Miktarı";
             // 
-            // txtUunAdi
+            // txtUrunAdi
             // 
-            this.txtUunAdi.Location = new System.Drawing.Point(92, 27);
-            this.txtUunAdi.Name = "txtUunAdi";
-            this.txtUunAdi.Size = new System.Drawing.Size(100, 20);
-            this.txtUunAdi.TabIndex = 3;
+            this.txtUrunAdi.Location = new System.Drawing.Point(92, 27);
+            this.txtUrunAdi.Name = "txtUrunAdi";
+            this.txtUrunAdi.Size = new System.Drawing.Size(100, 20);
+            this.txtUrunAdi.TabIndex = 3;
             // 
             // txtUrunFiyati
             // 
@@ -154,6 +158,7 @@
             this.btnGuncelle.TabIndex = 7;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnSil
             // 
@@ -164,6 +169,7 @@
             this.btnSil.TabIndex = 8;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // Form1
             // 
@@ -197,7 +203,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtStokMiktari;
         private System.Windows.Forms.TextBox txtUrunFiyati;
-        private System.Windows.Forms.TextBox txtUunAdi;
+        private System.Windows.Forms.TextBox txtUrunAdi;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnEkle;
