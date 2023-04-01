@@ -58,6 +58,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsADONet", "Windo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsEFDBFirst", "WindowsFormsEFDBFirst\WindowsFormsEFDBFirst.csproj", "{3B76D461-C89C-40B3-980E-80FA7724C041}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsEFCodeFirst", "WindowsFormsEFCodeFirst\WindowsFormsEFCodeFirst.csproj", "{3BE055F1-9A3F-4DB9-BC17-8C96CE9B4683}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -156,6 +158,10 @@ Global
 		{3B76D461-C89C-40B3-980E-80FA7724C041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B76D461-C89C-40B3-980E-80FA7724C041}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B76D461-C89C-40B3-980E-80FA7724C041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE055F1-9A3F-4DB9-BC17-8C96CE9B4683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE055F1-9A3F-4DB9-BC17-8C96CE9B4683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE055F1-9A3F-4DB9-BC17-8C96CE9B4683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE055F1-9A3F-4DB9-BC17-8C96CE9B4683}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

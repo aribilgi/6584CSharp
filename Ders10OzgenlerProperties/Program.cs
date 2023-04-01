@@ -27,7 +27,9 @@ internal class Program
 
         User kullanici = new()
         {
-            Name = "Alp", Email = "alp@arslan.net", Password = "2023"
+            Name = "Alp",
+            Email = "alp@arslan.net",
+            Password = "2023"
         };
         kullanici.KayitTarihi = DateTime.Now;
 

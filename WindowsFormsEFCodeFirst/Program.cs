@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace WindowsForms
+namespace WindowsFormsEFCodeFirst
 {
     internal static class Program
     {
@@ -13,7 +13,7 @@ namespace WindowsForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1()); // burada hangi formu yazarsak uygulama açıldığında o ekrana gelir.
+            Application.Run(new KategoriYonetimi());
         }
     }
 }

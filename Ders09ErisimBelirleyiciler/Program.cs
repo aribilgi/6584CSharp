@@ -31,7 +31,8 @@ internal class Program
 
         Kullanici kullanici = new()
         {
-            Adi = "Ali", Soyadi = "Can"
+            Adi = "Ali",
+            Soyadi = "Can"
         };
         SiniftaMetotKullanimi siniftaMetot = new(); // bu class Ders08Classlar projesinden geldi
         var sonuc = siniftaMetot.LoginKontrol(kullanici.Adi, kullanici.Soyadi);

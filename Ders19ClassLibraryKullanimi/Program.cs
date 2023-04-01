@@ -10,7 +10,8 @@ namespace Ders19ClassLibraryKullanimi
             // Bu projede Entities ClassLibrary kütüphanesini kullanabilmek için Dependencies e sağ tıklayıp add project references diyerek açılan pencereden Entities projesini seçip Ok diyerek pencereyi kapattık. Artık Entities içerisindeki class lara erişim belirteçleri izin veriyorsa erişip kullanabiliriz.
             Kategori kategori = new()
             {
-                Id = 1, Name = "Bilgisayar"
+                Id = 1,
+                Name = "Bilgisayar"
             };
             var urunler = new List<Urun>();
             urunler.Add(new Urun() { Name = "Klavye", Image = "urun1.jpg", Price = 199 });

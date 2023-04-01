@@ -29,7 +29,7 @@ do
 
 Console.WriteLine("Foreach Döngüsü");
 
-string[] kategoriler = {"Elektronik", "Bilgisayar", "Telefon"};
+string[] kategoriler = { "Elektronik", "Bilgisayar", "Telefon" };
 
 foreach (var kategori in kategoriler) // diziler için en kullanışlı döngü
 {

@@ -228,7 +228,8 @@ namespace Ders18Koleksiyonlar
             }
             var yeniKullanici = new User()
             {
-                Name = "Alp", Password = "789"
+                Name = "Alp",
+                Password = "789"
             };
             Console.WriteLine("kullanicilar listesinde yeniKullanici var mı? " + kullanicilar.Contains(yeniKullanici));
             kullanicilar.Add(yeniKullanici); // kullanicilar a yeniKullanici yı ekle

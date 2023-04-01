@@ -59,7 +59,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 Marka = "Dacia",
                 Model = "Logan",
                 KasaTipi = "Sedan",
-                VitesTipi= "Manuel",
+                VitesTipi = "Manuel",
                 YakitTipi = "Dizel",
                 Renk = "Bordo"
             };
@@ -92,15 +92,18 @@ namespace MyApp // Note: actual namespace depends on the project name.
             */
             Kategori kategori = new()
             {
-                Id = 1, KatgoriAdi = "Elektronik"
+                Id = 1,
+                KatgoriAdi = "Elektronik"
             };
             Kategori kategori2 = new()
             {
-                Id = 2, KatgoriAdi = "Bilgisayar"
+                Id = 2,
+                KatgoriAdi = "Bilgisayar"
             };
             Kategori kategori3 = new()
             {
-                Id = 3, KatgoriAdi = "Telefon"
+                Id = 3,
+                KatgoriAdi = "Telefon"
             };
 
             Console.WriteLine("Kategori : " + kategori.KatgoriAdi);
@@ -117,11 +120,18 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
             Urun urun = new()
             {
-                Adi = "Klavye", Fiyati = 249, UrunAciklamasi = "RGB Işıklı", Id = 1, Markasi = "Logitech"
+                Adi = "Klavye",
+                Fiyati = 249,
+                UrunAciklamasi = "RGB Işıklı",
+                Id = 1,
+                Markasi = "Logitech"
             };
             Urun mouse = new()
             {
-                Adi = "Mouse", Fiyati = 199, UrunAciklamasi = "Kablolu", Markasi = "A4 Tech"
+                Adi = "Mouse",
+                Fiyati = 199,
+                UrunAciklamasi = "Kablolu",
+                Markasi = "A4 Tech"
             };
             Console.WriteLine("Ürün Bilgileri:");
             Console.WriteLine($"Ürün Adı : {urun.Adi}");
@@ -138,7 +148,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
         {
             internal string sokakAdi;
             internal int kapiNo;
-        }        
+        }
     }
     class Kullanici
     {

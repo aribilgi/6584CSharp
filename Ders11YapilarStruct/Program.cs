@@ -28,7 +28,7 @@
             public struct Adres
             {
                 public int Id { get; set; }
-                public int KapiNo{ get; set; }
+                public int KapiNo { get; set; }
                 public string Sehir { get; set; }
                 public string Ilce { get; set; }
                 public string AcikAdres { get; set; }
@@ -63,7 +63,10 @@
 
             Kimlik.Adres adres = new() // Kimlik içerisindeki Adres yapısına ulaşma
             {
-                Ilce = "Pendik", Sehir = "İstanbul", KapiNo = 18, AcikAdres = "Batı mah."
+                Ilce = "Pendik",
+                Sehir = "İstanbul",
+                KapiNo = 18,
+                AcikAdres = "Batı mah."
             };
 
             Console.WriteLine();

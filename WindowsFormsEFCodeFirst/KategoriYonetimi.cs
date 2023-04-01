@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace WindowsFormsEFDBFirst
+namespace WindowsFormsEFCodeFirst
 {
     public partial class KategoriYonetimi : Form
     {
@@ -10,10 +10,10 @@ namespace WindowsFormsEFDBFirst
         {
             InitializeComponent();
         }
-        AdoNetDbEntities tablolar = new AdoNetDbEntities();
+        EFCodeFirstModel model = new EFCodeFirstModel();
         private void KategoriYonetimi_Load(object sender, EventArgs e)
         {
-            dgvKategoriler.DataSource = tablolar.Kategoriler.ToList();
+            dgvKategoriler.DataSource = model.Urunler.ToList();
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
@@ -25,9 +25,9 @@ namespace WindowsFormsEFDBFirst
             }
             var kategori = new Kategori();
             kategori.KategoriAdi = txtKategoriAdi.Text;
-            tablolar.Kategoriler.Add(kategori);
-            tablolar.SaveChanges();
-            dgvKategoriler.DataSource = tablolar.Kategoriler.ToList();
+            model.Kategoriler.Add(kategori);
+            model.SaveChanges();
+            dgvKategoriler.DataSource = model.Kategoriler.ToList();
             btnEkle.Enabled = true;
             btnGuncelle.Enabled = false;
             btnSil.Enabled = false;
@@ -37,7 +37,7 @@ namespace WindowsFormsEFDBFirst
         private void dgvKategoriler_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var id = Convert.ToInt32(dgvKategoriler.CurrentRow.Cells[0].Value.ToString());
-            var kategori = tablolar.Kategoriler.Find(id);
+            var kategori = model.Kategoriler.Find(id);
             txtKategoriAdi.Text = kategori.KategoriAdi;
             btnEkle.Enabled = false;
             btnGuncelle.Enabled = true;
@@ -52,10 +52,10 @@ namespace WindowsFormsEFDBFirst
                 return; // dön, aşağıdaki kodları çalıştırma.
             }
             var id = Convert.ToInt32(dgvKategoriler.CurrentRow.Cells[0].Value.ToString());
-            var kategori = tablolar.Kategoriler.Find(id);
+            var kategori = model.Kategoriler.Find(id);
             kategori.KategoriAdi = txtKategoriAdi.Text;
-            tablolar.SaveChanges();
-            dgvKategoriler.DataSource = tablolar.Kategoriler.ToList();
+            model.SaveChanges();
+            dgvKategoriler.DataSource = model.Kategoriler.ToList();
             btnEkle.Enabled = true;
             btnGuncelle.Enabled = false;
             btnSil.Enabled = false;
@@ -65,10 +65,10 @@ namespace WindowsFormsEFDBFirst
         private void btnSil_Click(object sender, EventArgs e)
         {
             var id = Convert.ToInt32(dgvKategoriler.CurrentRow.Cells[0].Value.ToString());
-            var kategori = tablolar.Kategoriler.Find(id);
-            tablolar.Kategoriler.Remove(kategori);
-            tablolar.SaveChanges();
-            dgvKategoriler.DataSource = tablolar.Kategoriler.ToList();
+            var kategori = model.Kategoriler.Find(id);
+            model.Kategoriler.Remove(kategori);
+            model.SaveChanges();
+            dgvKategoriler.DataSource = model.Kategoriler.ToList();
             btnEkle.Enabled = true;
             btnGuncelle.Enabled = false;
             btnSil.Enabled = false;

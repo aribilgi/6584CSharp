@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data; // sql veritabanı işlemleri için gerekli
 using System.Data.SqlClient;
 
 namespace WindowsFormsADONet
@@ -12,9 +10,9 @@ namespace WindowsFormsADONet
             BaglantiyiAc();
             int islemSonucu = 0;
             SqlCommand sqlCommand = new SqlCommand("insert into kategoriler (KategoriAdi) values (@KategoriAdi)", connection);
-            
+
             sqlCommand.Parameters.AddWithValue("@KategoriAdi", kategori.KategoriAdi);
-            
+
             islemSonucu = sqlCommand.ExecuteNonQuery(); // sorgu çalıştığında sql den bize etkilenen kayıt sayısı döner, işlem başarılıysa 0 dan büyük (genelde 1) değer gelir.
             sqlCommand.Dispose(); // yoket
             connection.Close(); // bağlantıyı kapat

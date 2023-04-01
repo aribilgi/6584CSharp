@@ -32,12 +32,16 @@
 
             Kategori kategori = new()
             {
-                Name = "Elektronik", UstMenudeGoster = true, EklenmeTarihi = DateTime.Now
+                Name = "Elektronik",
+                UstMenudeGoster = true,
+                EklenmeTarihi = DateTime.Now
             };
             Console.WriteLine($"kategori bilgileri :\n Adı : {kategori.Name} - Eklenme Tarihi : {kategori.EklenmeTarihi}");
             Urun urun = new()
             {
-                Name = "Klavye", Fiyat = 299, Kdv = 18,
+                Name = "Klavye",
+                Fiyat = 299,
+                Kdv = 18,
                 EklenmeTarihi = DateTime.Now
             };
             Console.WriteLine($"ürün bilgileri :\n Adı : {urun.Name} - Fiyatı : {urun.Fiyat} - Kdv : {urun.Kdv} - Eklenme Tarihi : {urun.EklenmeTarihi}");
