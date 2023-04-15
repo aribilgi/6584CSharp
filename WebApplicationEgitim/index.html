@@ -58,20 +58,24 @@
         <br />
         img elementine src özelliği ile resmin yolu belirtilirse ekranda resim gösterilmiş olur.
     </p>
-    <img src="/Images/Desktop image.png" alt="Alternate Text resim bulunamazsa"  width="500" />
+    <img src="/Images/Desktop image.png" alt="Alternate Text resim bulunamazsa" width="500" />
     <img src="/Images/Desktop image.png" alt="Alternate Text ekranda yazı gösterir" height="500" />
     <img src="/Images/Desktop image.png" alt="Alternate Text" width="500" height="500" title="Title attribute ü ile resmin üzerine gelince açıklama gösterebiliriz" />
     <img src="/Images/Desktop.png" alt="Resim bulunamadı!" />
     <p>
         img elementine width ve height özellikleri ile genişlik ve yükseklik tanılanabilir
     </p>
+    <p>
+        Projeye yüklediğimiz resimleri sürükle bırak yöntemiyle de ekranda gösterebiliriz!
+    </p>
+    <img src="Images/Desktop image.png" height="100" />
     <h3>
         HTML Table Elementi Kullanımı
     </h3>
     <table>
         <tr>
             <td>
-            table elementi ana kapsayıcıdır. table içerisinde satır oluşturmak için önce tr elementi açılıp kapatılır, sütun oluşturmak için tr içine td elementi açılıp kapatılır. 1 satır 1 sütunluk tablo.
+                table elementi ana kapsayıcıdır. table içerisinde satır oluşturmak için önce tr elementi açılıp kapatılır, sütun oluşturmak için tr içine td elementi açılıp kapatılır. 1 satır 1 sütunluk tablo.
             </td>
         </tr>
     </table>
@@ -82,5 +86,318 @@
             </td>
         </tr>
     </table>
+    <table border="1">
+        <tr>
+            <td>Burası tablonun 1. satırının 1. kolonu</td>
+            <td>Burası tablonun 1. satırının 2. kolonu</td>
+        </tr>
+    </table>
+    <hr />
+    <table border="1">
+        <tr>
+            <td>No</td>
+            <td>Kategori Adı</td>
+            <td>Durum</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Elektronik</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bigisayar</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Telefon</td>
+            <td>False</td>
+        </tr>
+    </table>
+    <hr />
+    <table border="1" width="500">
+        <tr>
+            <th>No</th>
+            <th>Kategori Adı</th>
+            <th>Durum</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Elektronik</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bigisayar</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Telefon</td>
+            <td>False</td>
+        </tr>
+    </table>
+    <h3>
+        Tablolarda Satır ve Sütunları Birleştirme
+    </h3>
+    <table border="1" width="444">
+        <caption><h3>caption ile tabloya bir başlık belirleyebiliriz</h3></caption>
+        <tr>
+            <td rowspan="3">Ürün Bilgileri :</td>
+        </tr>
+        <tr>
+            <td>Ürün Adı</td>
+            <td>Asus Laptop</td>
+        </tr>
+        <tr>
+            <th rowspan="2">
+                rowspan attribute ü ile kaç satır yükseklik vereceksek o değeri veriyoruz
+            </th>
+            <td>
+                <img src="Images/Desktop image.png" height="100" />
+            </td>
+        </tr>
+    </table>
+    <hr />
+    <h3>
+        Colspan ile sütunları birleştirme
+    </h3>
+    <table border="1" width="555">
+        <tr>
+            <th>
+                Ürün Adı :
+            </th>
+            <td>
+                Klavye
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Bu td colspan="2" özelliğiyle 1 kolon yerine 2 kolonluk genişliğe sahip
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Bu td de colspan kullanmadık. tek td var.
+            </td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <i>Html i elementi ile yana yatık(italik) yazı yazdırırız.</i>
+    <em>em elementi ile de yana yatık(italik) yazı yazdırırız.</em>
+    <b>b elementi ile ekranda kalın(bold) yazı vurgulayabiliriz.</b>
+    <strong>strong elementi de kalın yazı yazmamızı sağlar</strong>
+    <h2>Html de <small>small</small> elementiyle bir yazıyı küçülterek gösterebiliriz</h2>
+    <mark>mark elementi işaretli ve vurgulanmış element oluşturur</mark>
+    <ins>burası html ins tagı</ins>
+    <p>sub Html elementi ile <sub>alt</sub> çıkıntılı metin yazdırabiliriz</p>
+    <p>sup Html elementi ile <sup>üst</sup> çıkıntılı metin yazdırabiliriz</p>
+
+    <h3>Html Listeleme Elementleri</h3>
+    <p>
+        Sıralı, sırasız ve açıklamalı liste olmak üzere 3 farklı liste elementi bulunur
+    </p>
+    <ul>
+        <li>Unordered list</li>
+        <li>Sırasız liste oluşturur</li>
+        <li>bunun için ul kapsayıcı elementine li elementleri ile liste oluştururuz</li>
+    </ul>
+    <ul>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">İletişim</a></li>
+    </ul>
+    <h3>Ol Sıralı Liste</h3>
+    <h6>Ürünlerimiz</h6>
+    <ol>
+        <li>Klavye</li>
+        <li>Mouse</li>
+        <li>Monitör</li>
+        <li>Mikrofon</li>
+        <li>Hoparlör</li>
+    </ol>
+    <h3>Description List - Açıklama Listesi</h3>
+    <dl>
+        <dt>Ürün Adı : </dt>
+        <dd>Asus Laptop</dd>
+        <dt>Fiyatı : </dt>
+        <dd>9999 TL</dd>
+        <dt>Stok  : </dt>
+        <dd>5</dd>
+        <dt>Ürün Resmi : </dt>
+        <dd>
+            <img src="Images/Desktop image.png" height="100" />
+        </dd>
+    </dl>
+    <h4>Html kodlarına yorum satırı ekleme</h4>
+    <p>
+        Sayfa tasarımında bir bölümün başlangıç ve bitiş alanlarını belirlemek için kullanıcının görmeyeceği ama kaynak kodda görünen yorum satırı ekleyebiliriz.
+    </p>
+    <!--Html de kodların arasına kullanıcının görmeyeceği yorum satırı ekleyebiliriz-->
+    <p>
+        Yorum satırının kısa yolu yazıyı yazdıktan sonra yazıyı seçip ctrl + k > ctrl + c
+    </p>
+    <h3>
+        Fieldset Elementi
+    </h3>
+    <fieldset>
+        <legend>Kullanıcı Girişi</legend>
+        <form action="/index.html" method="post">
+            <table>
+                <tr>
+                    <td>Kullanıcı Adı : </td>
+                    <td>
+                        <input type="text" name="txtKullaniciAdi" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Şifre : </td>
+                    <td>
+                        <input type="password" name="txtSifre" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="btnGiris" value="Giriş" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <h3>
+        GET Yöntemiyle Form Tetikleme
+    </h3>
+    <p>
+        GET metodunda veriler sunucuya adres çubuğundan iletilir.
+        Bu yönteme QueryString denilir.
+        Key Value şeklinde kullanılır
+        Sunucuda da buradan gönderdiğimiz key(ara) in değerini okuduğumuzda bize value gelir böylece bu kelimeyle alakalı ürünleri veritabanından getirtebiliriz mesela.
+    </p>
+    <form action="/index.html" method="get">
+        <input type="search" name="ara" value="" />
+        <input type="submit" name="btnAra" value="Ara" />
+    </form>
+
+    <h3>Form Input-Veri Giriş Elementleri</h3>
+
+    <p>
+        Uygulamalarımızda kullanıcılardan veri almamızı sağlar. Kapsayıcı bir form elementine inputlar ekleyerek GET veya POST methodlarından biriyle veri alabiliriz. Form daki action ise form tetiklendiğinde sunucudaki hangi sayfanın veya metodun çalışacağını belirtir.
+    </p>
+
+    <form action="/index.html" method="post">
+        <table>
+            <tr>
+                <th>Ürün Adı : </th>
+                <td>
+                    <input type="text" name="txtUrunAdi" value="" required />
+                </td>
+            </tr>
+            <tr>
+                <th>Ürün Fiyatı : </th>
+                <td>
+                    <input type="text" name="txtUrunFiyati" value="" required />
+                </td>
+            </tr>
+            <tr>
+                <th>Ürün Stok : </th>
+                <td>
+                    <input type="number" name="txtUrunStok" value="0" />
+                </td>
+            </tr>
+            <tr>
+                <th>Ürün Kategorisi : </th>
+                <td>
+                    <select>
+                        <option value="">Seçiniz</option>
+                        <option value="1">Elektronik</option>
+                        <option value="2">Bilgisayar</option>
+                        <option value="3">Telefon</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Ürün Açıklması : </th>
+                <td>
+                    <textarea name="txtUrunAciklamasi" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>Durum : </th>
+                <td>
+                    <input type="checkbox" name="cbDurum" />
+                    <label for="cbDurum">Aktif</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Anasayfa : </th>
+                <td>
+                    <input type="radio" name="cbAnasayfa" />
+                    <label for="cbAnasayfa">Göster</label>
+                    <input type="radio" name="cbAnasayfa" />
+                    <label for="cbAnasayfa">Gösterme</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button name="btnKaydet" id="btnKaydet" type="submit">Kaydet</button>
+                    <button name="btnReset" id="btnReset" type="reset">Sıfırla</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Semantik HTML5 Elementleri</h2>
+
+    <p>
+        Html diline sonradan eklenen ve kodlamayı daha anlamlı hale getirmeyi hedefleyen elementlerdir.
+        Örneğin bir sayfanın üst kısmını, gövde kısmını, ve en alttaki footer kısmını bu anlamlı elementlerle oluşturabiliriz.
+    </p>
+
+    <header>
+        header elementi bir web sayfasının en üst bölümünü oluşturmak için kullanılır
+        <nav>
+            nav elementi de içerisinde menü veya sayfa konumlarını barındıran navigasyon elementleridir.
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        article elementi sayfada göstereceğimiz makale tarzı yazıları belirtmek için kullanılabilir.
+    </article>
+
+    <section>
+        section elementi div elementine alternatif olarak sayfadaki bölümleri ve sekmeleri göstermek için kullanılabilir.
+    </section>
+
+    <aside>
+        aside elementi genelde yan menüleri barındırmak için kullanılır
+        <ul id="yanMenu">
+            <li><a href="#">Elektronik</a></li>
+            <li><a href="#">Bilgisayar</a></li>
+            <li><a href="#">Telefon</a></li>
+        </ul>
+    </aside>
+
+    <figure>
+        <figcaption>resim alanlarını çevrelemek için figure elementi kullanılabilir</figcaption>
+        <img src="Images/Desktop image.png" height="180" title="figure elementindeki resim" />
+    </figure>
+
+    <footer>
+        footer elementi ise web sayfaları veya e ticaret sitelerinde tüm sayfalarda sabit olan sayfanın en alt kısmını belirtmek için kullanılır. 
+    </footer>
+
 </body>
 </html>
