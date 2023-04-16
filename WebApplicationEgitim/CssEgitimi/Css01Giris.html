@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Giriş</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        h1 {
+            color: red
+        }
+
+        h2, h3 {
+            color: yellow
+        }
+    </style>
+    <link href="../Stil.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>CSS Giriş</h1>
+    <h2>Css Nedir?</h2>
+    <p>
+        CSS in açılımı cascading style sheets dir. Ekrandaki HTML öğelerinin tasarımını yapmamızı sağlar. 1 tane css dosyasıyla tüm uygulamayı dizayn edebildiğimiz gibi 1 den çok stil dosyası da kullanabiliriz.
+    </p>
+    <p>
+        Not : Herhangi bir Css uygulamazsak her tarayacı kendi css kodlarıyla html elementlerimizi şekillendirir. Dolayısıyla chrome da düzgün görünen bir tasarım firefox tarayıcıda farklı görünebilir! Buna tarayıcı uyumsuzluğu denir. Bu sorunu çözmek için genelde bir css dosyasıyla tüm elementlerin css leri sıfırlanıp sonrasında kendi kurallarımızı ekleriz.
+    </p>
+    <p>
+        Ayrıca uygulamalarda gerektiğinde harici bir eklenti kullanmamız gerekebilir. Kullandığımız eklentinin de kendine ait tasarım dosyası olabilir bunu da projeye dahil ederek kullanırız.
+    </p>
+
+    <h4>CSS Yazma Seçenekleri</h4>
+    <ol>
+        <li>Inline yani direk html elementinin içine style attribute ü ile yazabiliriz.</li>
+        <li>Sayfada head kodları arasında style tag larının arasında yazabiliriz.</li>
+        <li>Harici bir dosya oluşturup (stil.css gibi) bu dosyayı yine sayfanın head alanında çağırıp tüm syfaları 1 dosya ile dizayn edebiliriz.</li>
+    </ol>
+    <p>
+        Css uygulamak için öncelikle css uygulayacağımız element ya da elementleri seçip sonrasında css kodları ile bu elementlere css uygulayabiliriz.
+    </p>
+    <h4>
+        Inline Css Yazımı
+    </h4>
+    <p style="background-color: white; color:blue;">
+        Elemetin başlangıç tag leri arasına style="" diyerek css yazabiliriz.
+        Eğer 1 den çok css özelliği ekleyeceksek aralarına ; ekleyerek yazarız.
+    </p>
+    <h4>
+        Harici CSS Dosyası Kullanma
+    </h4>
+    <p>
+        Projeye(veya projedeki dilediğimiz bir klasöre) sağ tıklayıp Add > Cascading style sheet menüsünden oluşacak css dosyasına dilediğimiz ismi verip ok diyerek .css uzantısıyla dosyayı oluşturuyoruz.
+    </p>
+    <div>
+        Oluşan Css dosyası içerisine sadece css kodları yazıyoruz.
+    </div>
+    <p>
+        Son olarak oluşturduğumuz css dosyasının sayfamızda çalışması için sayfanın head kodları arasına dosyayı sürükle bırak yöntemiyle veya elle link kodu yazarak dahil etmeliyiz aksi taktirde yazacağımız css kodları sayfaya işlemez!
+    </p>
+    <div>
+        Not : harici css kullandığımızda bazen yaptığımız css değişiklikleri tarayıcıda uygulanmaz bunun sebebi tarayıcıların css gibi statik dosyaları ön belleklerine almalarıdır!
+        Bu durumda klavyeden ctrl tuşuna basılı tutarak sayfayı refresh yaparsak css dosyası yeniden kaynağından çekilir ve ön bellek boşaltılarak bu yeni dosya kullanılır.
+    </div>
+    <h3>
+        CSS Seçiciler
+    </h3>
+    <h4>
+        1-Element Seçici
+    </h4>
+    <p>
+        Sayfadaki HTML elementleri seçerek bu elementlere css uygulayabiliriz.
+        Örneğin body elementi veya div, p, h1-h6, ul vb gibi.
+    </p>
+    <h4>
+        2-Id Seçici
+    </h4>
+    <p id="idSecici">
+        Elementlere sonradan tanımlayacağımız id attribute ü ile ulaşıp css kodu uygulayabiliriz.
+        Bir elemente id si ile ulaşmak için css yazdığımız yerde # işareti koyup id ye yazdığımız değeri belirtiriz, şöyle; #idSecici{ buraya css kodları yazılır }
+    </p>
+    <style>
+        #idSecici {
+            background-color: blue;
+            color: yellow;
+        }
+    </style>
+    <hr />
+    <h4 class="classSecici">
+        3-Class Seçici
+    </h4>
+    <p class="classSecici">
+        Css class seçici kullanabilmek için de her hangi bir html elementinin başlangıç etiket isminden sonra 1 boşluk bırakıp class="" şeklinde tanımlama yaparız. İstediğimz class ismini verebiliriz.
+        Css tarafında class seçici ile kod yazmak için . seçicisi kullanılır.
+        Style kodları arasında .classSecici{} şeklinde elementlere ulaşıp css uygulayabiliriz.
+    </p>
+    <style>
+        .classSecici {
+            /* Buradaki seçici sayfadaki tüm elementlerinden class özelliği classSecici verilmiş olanı seçer! */
+            background-color: yellow;
+            color: blue;
+        }
+        /* Css kodları arasına bu şekilde Yorum satırı ekleyebiliriz */
+        p.classSecici { /* Buradaki seçici p elementlerinden class özelliği classSecici verilmiş olanı seçer! */
+            background-color: white;
+            color: blue;
+        }
+
+        .center {
+            text-align: center
+        }
+    </style>
+    <h5>
+        Not : Id seçici yi genellikle 1 sayfadaki sadece 1 element için kullanırız!
+        Class seçici ise birden çok elementi seçmek için kullanılır!
+    </h5>
+    <h4 class="classSecici center">
+        1 elementte 1 den fazla class kullanımı
+    </h4>
+
+    <div id="anaDiv">
+        <p>
+            Bir elementin içindeki elementleri hedefleyerek de css uygulayabiliriz
+        </p>
+        <p>
+            Bunun için css kodumuzda ana seçici (#anaDiv) deyip bir boşluk veya > işaretiyle altında seçmek istediğimiz elementleri belirtebiliriz
+        </p>
+        <div>
+            Ana div içerisindeki alt div
+        </div>
+    </div>
+    <style>
+        div#anaDiv p {
+            /* Sayfadaki divlerden id si anaDiv olan elementin altındaki p elementlerini seç ve şu css leri uygula */
+            background-color: azure;
+            text-align: right;
+        }
+    </style>
+
+    <h3>
+        1 elemente 1 den fazla Css etki ettiğinde hangi Css uygulanır?
+    </h3>
+    <ol>
+        <li>Satır içi stil(elemente style= diyerek yazdığımız)</li>
+        <li>Dış css veya sayfadaki style a yazılan css ler</li>
+        <li>Tarayıcının varsayılan css değerleri</li>
+    </ol>
+
+    <h2>
+        Css İle Elementlere Kenarlık(Border) Uygulama
+    </h2>
+
+    <h1 style="border:1px solid Tomato">Border solid-düz çizgi</h1>
+    <h2 style="border:2px dashed DodgerBlue">Border dashed-kesik çizgi</h2>
+    <h3 style="border:3px dotted violet">Border dotted-noktalı çizgi</h3>
+    <h4 style="border:5px double blue">Border double-çift çizgi</h4>
+    <h5 style="border:5px groove yellow">Border groove çizgi</h5>
+    <h6 style="border:5px inset silver">Border inset çizgi</h6>
+    <h6 style="border:5px outset silver">Border outset çizgi</h6>
+
+</body>
+</html>

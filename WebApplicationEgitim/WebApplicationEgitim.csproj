@@ -68,9 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="anasayfa.html" />
+    <Content Include="CssEgitimi\Css01Giris.html" />
+    <Content Include="CssEgitimi\Css02Arkaplanlar.html" />
     <Content Include="Global.asax" />
     <Content Include="Images\Desktop image.png" />
+    <Content Include="Images\google.png" />
     <Content Include="index.html" />
+    <Content Include="Stil.css" />
     <Content Include="Web.config" />
     <Content Include="WebFormElementleri.aspx" />
   </ItemGroup>

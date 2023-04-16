@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Css02 Arkaplanlar</title>
+</head>
+<body>
+    <h1>Css02 Arkaplanlar</h1>
+    <p>
+        Css ile sayfadaki elementlere arkaplan tasarımları yapabiliriz.
+    </p>
+    <h2>Arkaplanla yapabileceklerimiz</h2>
+    <ol>
+        <li>Arkaplan rengi</li>
+        <li>Arkaplan resmi</li>
+        <li>Arkaplan resim tekrar ayarı</li>
+        <li>Arkaplanda ek kullanımı</li>
+        <li>Arkaplan konumu</li>
+    </ol>
+    <div style="background-color: green; opacity: 0.5">
+        Css ile elementlere opacity ile şeffaflık ayarı yapabiliriz.
+    </div>
+
+    <hr />
+
+    <div style="background-color: rgba(0, 128, 0, 0.5)">
+        Opaklık için rgba özelliği ile renkleri ve opacity i ayarlayabiliriz.
+        <br />
+        r(Red)g(Green)b(Blue),a(Alpha)
+        <br />
+        rgb renkleri oluşturan renk kodları, sondaki ise opacity değeridir.
+    </div>
+
+    <hr />
+
+    <div style="background-image:url(/Images/google.png); height:200px;">
+        <h3>Css ile Arkaplan resmi</h3>
+        <p>
+            Html elementlerine css ile arkaplan resmi ekleyebiliriz.
+        </p>
+    </div>
+
+    <hr />
+
+    <div style="background-image:url(/Images/google.png); background-repeat:no-repeat; height:200px;">
+        <h3>Css ile Arkaplan resim tekrar ayarı</h3>
+        <p>
+            Html elementlerine css ile arkaplan resmi ekleyebiliriz. Eklediğimiz resmin tüm alanda tekrar etmesini istemezsek background-repeat:no-repeat; özelliğini eklemeliyiz.
+        </p>
+        <p>
+            Resmin dikeyde veya yatayda tekrar etmesini de sağlayabiliriz.
+            Bunun için background-repeat:repeat-y; dikeyde tekrar et
+            background-repeat:repeat-x; yatayda tekrar et demeliyiz.
+        </p>
+    </div>
+
+    <hr />
+
+    <div style="background-image: url(/Images/google.png); background-repeat: repeat-x; height: 200px;">
+        <h3>Css ile Arkaplan resim tekrar ayarı</h3>
+        <p>
+            Html elementlerine css ile arkaplan resmi ekleyebiliriz. Eklediğimiz resmin tüm alanda tekrar etmesini istemezsek background-repeat:no-repeat; özelliğini eklemeliyiz.
+        </p>
+        <p>
+            Resmin dikeyde veya yatayda tekrar etmesini de sağlayabiliriz.
+            Bunun için background-repeat:repeat-y; dikeyde tekrar et
+            background-repeat:repeat-x; yatayda tekrar et demeliyiz.
+        </p>
+    </div>
+
+    <hr />
+
+    <div style="background-image: url(/Images/google.png); background-repeat: no-repeat; height: 200px; background-position:center;">
+        <h3>Css ile Arkaplan resim konumunu ayarlama</h3>
+        <p>
+            Arkaplan resmini elementin içerisinde konumlandırabiliriz.
+            Bunun için css koduna background-position:center; şeklinde kod yazarız.
+        </p>
+    </div>
+    
+    <hr />
+
+    <div style="background-image: url(/Images/google.png); background-repeat: no-repeat; height: 200px; background-position:bottom right;">
+        <h3>Css ile Arkaplan resim konumunu ayarlama</h3>
+        <p>
+            Arkaplan resmini elementin içerisinde konumlandırabiliriz.
+            Bunun için css koduna background-position:center bottom; şeklinde kod yazarız.
+        </p>
+        <p>
+            Dilersek px olarak da tam konum ayarlayabiliriz. bottom right yazan yerlere px cinsinden değer belirtmemiz yeterli. 50px 73px gibi.
+        </p>
+    </div>
+
+    <hr />
+
+    <div style="background-image: url(/Images/google.png); background-repeat: no-repeat; height: 500px; background-position:bottom right; background-attachment:fixed;">
+        <h3>Css ile Arkaplan Resmini Sabitleme</h3>
+
+        <p>
+            Bir elementi kaydırırken arkada resmi sabitleyip üzerinden geçme efekti uygulayabiliriz. Bunun için background-attachment:fixed; css kodunu kullanabiliriz.
+        </p>
+
+        <p>
+            Arkaplan resmini elementin içerisinde konumlandırabiliriz.
+            Bunun için css koduna background-position:center bottom; şeklinde kod yazarız.
+        </p>
+        <p>
+            Dilersek px olarak da tam konum ayarlayabiliriz. bottom right yazan yerlere px cinsinden değer belirtmemiz yeterli. 50px 73px gibi.
+        </p>
+    </div>
+
+    <div style="background: silver url(/Images/google.png) no-repeat center; height: 300px;">
+        <h3>
+            Css Tek background Kullanımı
+        </h3>
+        <p>
+            Css de arkaplan özelliklerini background-image: url(/Images/google.png); background-repeat: no-repeat; height: 500px; background-position:bottom right; background-attachment:fixed; şeklinde yazabildiğimiz gibi sadece 1 background kodu yazıp içine tek tek bu ayarları belirtebiliyoruz.
+        </p>
+    </div>
+
+</body>
+</html>
