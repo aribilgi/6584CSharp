@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Css Display Özelliği</title>
+</head>
+<body>
+    <h1>Css Display Özelliği</h1>
+    <p>
+        Html elementlerinin varsayılan diplay isminde özellikleri vardır ve css ile bu özelliklerini değiştirebiliriz.
+    </p>
+    <div>
+        div elementi blok seviye elementtir
+    </div>
+    <h4>
+        Blok seviye elementler tüm satırı kaplar
+    </h4>
+    <span>
+        span elementi inline elementtir
+    </span>
+    <span>
+        bu yüzden elementler ekranda yan yana dizilir
+    </span>
+    <ul>
+        <li>Anasayfa</li>
+        <li>Hakkımızda</li>
+    </ul>
+    <h2>
+        Display Özelliği Block Elementler
+    </h2>
+    <div>
+        body
+        <br />
+        div
+        <br />
+        h1-h6
+        <br />
+        p
+        <br />
+        form
+        <br />
+        header
+        <br />
+        footer
+        <br />
+        section
+        <br />
+        ul
+    </div>
+    <h3>Display Özelliği İnline Elementler</h3>
+    <div>
+        span, a, img gibi elementlerdir.
+        <span>burası span elementi</span>
+        <a href="#">İletişim</a>
+        <img src="../Images/google.png" title="img elementi" />
+    </div>
+
+    <h3>Elementlerin display özelliğini değiştirme</h3>
+
+    <p style="display:inline">
+        p elementi display:inline ile blok tan satır içine dönüşebilir.
+    </p>
+    <h3 style="display:inline-block">
+        h3 elementi - display:inline-block da kullanabiliriz
+    </h3>
+    <span style="display:block; border: 1px solid">
+        bu span display:block dur
+    </span>
+
+    <h3>Display ile element gizleme</h3>
+    <div style="display:none">
+        display:none ile elementi ekranda gizleyebiliriz
+    </div>
+    <h3>visibility ile element gizleme</h3>
+    <div style="visibility:hidden; height:50px">
+        visibility:hidden ile de elementi ekranda gizleyebiliriz
+    </div>
+    <div>
+        visibility:hidden ile ekranda gizlediğimiz elementin alanı korunur
+    </div>
+
+    <h3>Display Flex</h3>
+    <p>
+        Css e sonradan eklenmiş ve esnek tasarımlar oluşturmamızı sağlayan bir özelliktir.
+    </p>
+    <div style="display:flex">
+        Flex özelliğini kullanmak için bir elemente display:flex veya inline-flex özelliğini tanımlamamız gerekir
+    </div>
+    <style>
+        #flexDiv {
+            display: flex;
+            min-height: 300px;
+            border: 1px solid;
+            flex-wrap: wrap
+        }
+
+            #flexDiv div {
+                padding: 1rem 3rem;
+                margin: 1rem;
+                border: 1px solid;
+                background-color: antiquewhite;
+            }
+    </style>
+
+    <div id="flexDiv" class="flexDiv">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+
+    <h4>flex-wrap: </h4>
+    <p>
+        kapsayıcı elemente sığmayan içeriklerin alt satırdan devam etmesi için flex özelliği verdiğimiz elemente flex-wrap: wrap css özelliği tanımlamamız gerekir.
+    </p>
+
+    <hr />
+
+    <h3>Flex-Direction</h3>
+
+    <p>
+        Öğelerin yönünü belirlememizi sağlayan flex özelliğidir.
+        <br />
+        Öğeler normalda yatayda sıralanırken bu özellikle öğeleri yukarıdan aşağı dikey olarak dizebiliriz.
+    </p>
+
+    <h4>
+        Align-Content
+    </h4>
+    <p>
+        Çok satırlı yapılarda öğelerin dikey eksende hizasını ayarlamamızı sağlar.
+        <br />
+        Kullanımı için kapsayıcı öğeye align-content: stretch | flex-start | flex-end | center | space-between | space-evenly özelliklerinden biri verilir.
+    </p>
+
+    <h4>
+        Justify-Content
+    </h4>
+    <p>
+        Öğelerin yatay eksende hizalanmasını sağlar.
+        <br />
+        Kullanımı için kapsayıcı öğeye Justify-Content özelliği uygulanır.
+        kod örneği :  justify-content: space-evenly;
+    </p>
+
+    <h4>
+        Align-Items
+    </h4>
+    <p>
+        Öğelerin dikey eksende hizalaması için kullanılır.
+        <br />
+        Kullanımı için kapsayıcı öğeye Align-Items: stretch | flex-start | flex-end | center | baseline özellikleri tanımlanabilir.
+    </p>
+
+    <h4>
+        Order Özelliği İle Elemanları Sıralama
+    </h4>
+    <p>
+        Flex özelliği verilen elemanları ekranda sıralayarak gösterebiliriz.
+        <br />
+        <b>Not:</b> <i>Sıralama uygulanan elemanlar kendi aralarında sıralanır, diğer elemanlardan ayrılırlar!</i>
+    </p>
+    <style>
+        .item5 {
+            order: 6
+        }
+
+        .item6 {
+            order: 5
+        }
+    </style>
+
+    <h4>Flex-Grow</h4>
+    <p>
+        Bir öğeyi diğerlerine göre daha büyük göstermek için kullanılır.
+    </p>
+    <style>
+        .item5 {
+            flex-grow: 2;
+        }
+
+        .item6 {
+            flex-grow: 4;
+        }
+    </style>
+
+    <h4>Flex-Shrink</h4>
+    <p>
+        Bir öğeyi diğerlerine göre daha küçük göstermek için kullanılır.
+    </p>
+    <style>
+        .flexDiv div:first-child {
+            flex-shrink: 2;
+        }
+
+        .flexDiv div:last-child {
+            flex-shrink: 3;
+        }
+    </style>
+</body>
+</html>

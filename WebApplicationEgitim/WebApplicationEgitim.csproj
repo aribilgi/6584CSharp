@@ -70,6 +70,10 @@
     <Content Include="anasayfa.html" />
     <Content Include="CssEgitimi\Css01Giris.html" />
     <Content Include="CssEgitimi\Css02Arkaplanlar.html" />
+    <Content Include="CssEgitimi\Css03MarginPadding.html" />
+    <Content Include="CssEgitimi\Css04GenislikYukseklik.html" />
+    <Content Include="CssEgitimi\Css05DisplayOzelligi.html" />
+    <Content Include="CssEgitimi\Css06PositionOzelligi.html" />
     <Content Include="Global.asax" />
     <Content Include="Images\Desktop image.png" />
     <Content Include="Images\google.png" />

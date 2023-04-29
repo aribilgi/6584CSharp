@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Css 04 Genişlik ve Yükseklik</title>
+</head>
+<body>
+    <h1>Css 04 Genişlik ve Yükseklik</h1>
+    <p style="width: 350px; height:180px; padding:18px; background-color: bisque">
+        Bir öğenin genişliğini ayarlamak için width, yüksekliğini ayarlamak için height özellikleri kullanılır.
+    </p>
+    <h3>
+        height ve width özellikleri şu değerleri alabilir
+    </h3>
+    <div style="height: 200px; width:50%; background-color:blanchedalmond">
+        auto: varsayılan değer, içeriğe göre otomatik belirlenir
+        <br />
+        length: px, cm, em, rem ile genişlik ve yükseklik tanımlanabilir
+        <br />
+        % : tüm alanın belirli yüzdesini genişlik ve yükseklik için kullanabiliriz
+        <br />
+        initial : genişlik ve yüksekliği varsayılan değere ayarlar
+        <br />
+        inherit : genişlik ve yüksekliği ana değerlerinden devralır.
+    </div>
+
+    <h2>Maksimun Genişlik ve Yükseklik</h2>
+    <p style="max-height:100px; max-width:100px; border: 1px solid">
+        Elementlere maksimum genişlik ve yükseklik değerleri belirtebiliriz.
+    </p>
+
+    <h2>Minimum Genişlik ve Yükseklik</h2>
+    <p style="min-height:150px; min-width:175px; border: 1px solid">
+        Elementlere Minimum genişlik ve yükseklik değerleri belirtebiliriz.
+    </p>
+
+    <p style="width: 10em; height: 5em; padding: 1em; background-color: bisque;">
+        em kullanım örneği, 1em=16px
+    </p>
+
+    <p style="width:7.5rem; height: 4.5rem; padding:1rem; background-color:bisque">
+        rem kullanım örneği, 1rem=16px, rem mobil cihazlarda esneme özelliğine sahip
+    </p>
+
+    <h3>İçerik Taşması</h3>
+
+    <p style="width: 200px; height: 200px; background-color: bisque; border: 1px solid; overflow: auto ">
+        Elementlerin içerikleri alana sığmazsa içerik taşma durumu oluşur.
+        <br />
+        Bu durumda css te overflow özelliğiyle çözüm üretebiliriz.
+        <br />
+        Overflow özellikleri:
+        <br />
+        visible: varsayılan değerdir, taşmaya müdahale edilmez
+        <br />
+        hidden: taşan kısım ekranda gizlenir
+        <br />
+        scroll: taşma kırpılır ve görünmeyen içerik kaydırma çubuğu ile gösterilir
+        <br />
+        auto: scroll a benzer fakat sadece gerektiğinde kaydırma çubuğu çıkar.
+    </p>
+</body>
+</html>

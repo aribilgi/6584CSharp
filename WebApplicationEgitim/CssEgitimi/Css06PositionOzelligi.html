@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Css Position Özelliği</title>
+</head>
+<body>
+    <h1>Css Position Özelliği</h1>
+    <p>
+        Css position özelliği html elementlerini ekranda konumlandırmak için kullanılır.
+    </p>
+
+    <h2>5 Farklı Konum Özelliği Vardır</h2>
+    <ol>
+        <li>static : varsayılan değerdir konumlandırmadan etkilenmez</li>
+        <li>relative : göreceli</li>
+        <li>fixed : sabit</li>
+        <li>absolute : mutlak</li>
+        <li>sticky : yapışkan</li>
+    </ol>
+
+    <hr />
+
+    <h2>Position : relative</h2>
+    <div style="position: relative; border: 1px solid;">
+        <p>
+            position:relative olan öğe üst(top), sağ(right), alt(bottom) ve sol(left) değerlerine göre konumlanır
+        </p>
+        <div style="position: relative; left:25px; top:34px; border:1px solid;">
+            position:relative elementi kullanımı
+        </div>
+    </div>
+
+
+    <h2>position: fixed (sabit)</h2>
+
+    <p>
+        Bir elemana position: fixed özelliği tanımlanırsa bu öğe hep aynı yerinde kalır.
+    </p>
+    <p>
+        Öğeyi konumlandırmak için üst(top), sağ(right), alt(bottom) ve sol(left) özellikler kullanılır.
+    </p>
+
+    <div style="position:fixed; bottom:1rem; right: 3rem; width:180px; border:3px inset">
+        position:fixed uygulanmış div
+    </div>
+
+    <h3>
+        position:absolute-mutlak konum
+    </h3>
+    <p>
+        absolute özelliği ile elementlere mutlaka bulunmaları gereken konumunu belirleyebiliriz.
+    </p>
+    <div style="position:relative; border:1px solid; margin-bottom: 5rem">
+        Kapsayıcı div e position:relative özelliği veriyoruz
+        <div style="position: absolute; top: 80px; right: 0; border: 3px inset">
+            position: absolute uygulanan div
+        </div>
+    </div>
+
+    <h3>Position-Sticky</h3>
+
+</body>
+</html>
