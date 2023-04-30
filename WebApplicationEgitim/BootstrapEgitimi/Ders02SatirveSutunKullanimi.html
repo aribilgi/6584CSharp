@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap Satır ve Sütun Kullanımı</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap Satır ve Sütun Kullanımı</h1>
+        <h2>Row-Satır Oluşturma</h2>
+        <div class="row">
+            Bir dive class="row" özelliğini verdiğimizde bootstrap bu divi satır olarak ele alır.
+        </div>
+        <h2>
+            Col-Sütun Oluşturma
+        </h2>
+        <div class="row">
+            <div class="col">
+                Sütun kullanmak için önce bir row ile satır açıp sonra col class ına sahip sütun oluşturmalıyız
+            </div>
+            <div class="col">
+                Bir satır içinde 12 ye kadar kolon açabiliriz
+            </div>
+            <div class="col">
+                Kolonlar yan yana dizilir
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-3">
+                Satır içerisinde col-3 class ı ile bir kolon oluşturup 3 birimlik alan kullanmasını sağlayabiliriz.
+            </div>
+            <div class="col-6 col-sm-4">
+                Bir kolona birden fazla bs class ı uygulayarak farklı ekranlar için tasarım yapabiliriz.
+            </div>
+            <div class="col-2">
+                2 birimlik kolon
+            </div>
+        </div>
+        <hr />
+        <h2>Satırda Gösterilecek Kolon Sayısını Ayarlama</h2>
+        <p>
+            Bir satırda göstermek istediğimiz içerik sayısını row class ının olduğu dive row-cols-3 - 4 .. class ı ile belirleyebiliriz.
+        </p>
+        <div class="row row-cols-3">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+            <div class="col">5</div>
+            <div class="col">6</div>
+            <div class="col">7</div>
+            <div class="col">8</div>
+            <div class="col">9</div>
+        </div>
+    </div>
+    <br /><br /><br /><br /><br />
+</body>
+</html>

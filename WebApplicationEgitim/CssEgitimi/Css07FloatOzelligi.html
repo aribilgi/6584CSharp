@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Css Float Özelliği</title>
+</head>
+<body>
+    <h1>Css Float Özelliği</h1>
+    <div>
+        <div style="float: left; background-color: yellow; border: 1px solid">
+            float left özelliği verilen div sola yapışır, içeriği kadar yer kaplar ve kendinden sonra gelen eleman da buna göre konumlanır
+        </div>
+        <div style="border: 1px solid">
+            float left olan elemandan sonraki div
+        </div>
+        <div style="border: 1px solid">
+            float left olan elemandan sonraki 2. div
+        </div>
+
+        <div style="float: right; background-color:yellow; border: 1px solid">
+            float right özelliği verilen div sağa yapışır, içeriği kadar yer kaplar ve kendinden sonra gelen eleman da buna göre konumlanır
+        </div>
+        <div style="border: 1px solid">
+            float right olan elemandan sonraki div
+        </div>
+        <div style="border: 1px solid">
+            float right olan elemandan sonraki 2. div
+        </div>
+
+    </div>
+    <div id="urunler">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <style>
+        #urunler div {
+            float: right;
+            padding: 3rem;
+            background-color: bisque
+        }
+    </style>
+
+    <h3 style="background-color: bisque">Float Clear</h3>
+
+    <div style="float: left; background-color: bisque">
+        burası float:left clear divi
+    </div>
+    <div style="clear: left; background-color: bisque">
+        burası float:left den sonraki clear: left divi
+        <br />
+        float uygulanmış bir div den sonraki elemanın yapışma özelliğini iptal edip alt satırda konumlanması için clear özelliği kullanılır.
+    </div>
+
+    <style>
+        #resim {
+            float: left;
+            
+            margin-right: 1rem;
+        }
+
+        .kapsayici {
+            clear: both;
+            border: 1px solid red;
+            padding: 1rem;
+            width: 500px;
+        }
+    </style>
+    <div class="kapsayici">
+        <div id="resim">
+            <img src="../Images/google.png" />
+        </div>
+        <div id="yazi">
+            burası float:left den sonraki clear: left divi
+            <br />
+            float uygulanmış bir div den sonraki elemanın yapışma özelliğini iptal edip alt satırda konumlanması için clear özelliği kullanılır.
+            <br />
+            clear: both, hem float left hem de float right dan gelen yapışma özelliğini iptal eder.
+        </div>
+    </div>
+</body>
+</html>

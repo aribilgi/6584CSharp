@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap Hizalama</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Bootstrap Hizalama</h1>
+        <p>
+            Bootstrap display flex yapısını kullanır ve flex teki hizalama özellikleri için belirlenmiş class ları kullanarak içerikleri hizalayabiliriz.
+        </p>
+        <h3>
+            Kolonları Dikeyde Hizalama
+        </h3>
+        <p>
+            <b>Hizalama class ları : </b>
+            <ol>
+                <li>align-items-start : başlangıça hizala</li>
+                <li>align-items-center : merkeze hizala</li>
+                <li>align-items-end : sona hizala</li>
+            </ol>
+        </p>
+        <div class="row row-cols-3 align-items-start" style="min-height:222px; background-color: bisque">
+            <div class="col">col 1</div>
+            <div class="col">col 2</div>
+            <div class="col">col 3</div>
+            <div class="col">col 4</div>
+            <div class="col">col 5</div>
+            <div class="col">col 6</div>
+        </div>
+        <h2>Yatayda Hizalama</h2>
+        <p>
+            <ol>
+                <li>justify-content-start : başa hizala</li>
+                <li>justify-content-center: ortaya hizala</li>
+                <li>justify-content-end: sona hizala</li>
+                <li>justify-content-around: her iki yanda eşit boşlukla hizala</li>
+                <li>justify-content-between: ilk öğeyi başa, son öğeyi sona ve aradakileri de eşit bir şekilde aralıkla hizalar</li>
+                <li>justify-content-evenly : tüm kolonları eşit bir şekilde hizalar</li>
+            </ol>
+        </p>
+        <div class="row justify-content-around" style="min-height:222px; background-color: bisque ">
+            <div class="col-2">col 1</div>
+            <div class="col-2">col 2</div>
+            <div class="col-2">col 3</div>
+        </div>
+    </div>
+</body>
+</html>
