@@ -71,6 +71,14 @@
     <Content Include="BootstrapEgitimi\Ders01Giris.html" />
     <Content Include="BootstrapEgitimi\Ders02SatirveSutunKullanimi.html" />
     <Content Include="BootstrapEgitimi\Ders03Hizalama.html" />
+    <Content Include="BootstrapEgitimi\Ders04Siralama-ittirme.html" />
+    <Content Include="BootstrapEgitimi\Ders05Margin-Padding.html" />
+    <Content Include="BootstrapEgitimi\Ders06TableClasslari.html" />
+    <Content Include="BootstrapEgitimi\Ders07FormElementleri.html" />
+    <Content Include="BootstrapEgitimi\Ders08Alerts.html" />
+    <Content Include="BootstrapEgitimi\Ders09RenkClasslari.html" />
+    <Content Include="BootstrapEgitimi\Ders10Listeler.html" />
+    <Content Include="BootstrapEgitimi\Ders11Komponentler.html" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -141,6 +149,9 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Images\1429-x-612-3D-MAX-01.webp" />
+    <Content Include="Images\1429-x-612-yazilim-uzmanliği-01.webp" />
+    <Content Include="Images\PYTHON-den.webp" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />

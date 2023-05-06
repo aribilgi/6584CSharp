@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BS Sıralama ve İttirme Özelliği</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>BS Sıralama ve İttirme Özelliği</h1>
+        <p>
+            Kolonları sıraalamak için order-0 ile order-5 arasındaki class ları kullanabiliriz.
+        </p>
+        <div class="row">
+            <div class="col">kolon 1</div>
+            <div class="col order-5">kolon 2</div>
+            <div class="col order-2">kolon 3</div>
+            <div class="col order-3">kolon 4</div>
+            <div class="col">kolon 5</div>
+            <div class="col order-1">kolon 6</div>
+        </div>
+        <hr />
+        <h2>Kolonları İttirme</h2>
+        <div class="row">
+            <div class="col-md-4">
+                Burası col-md-4 class lı div
+            </div>
+            <div class="col-md-3 offset-md-3">
+                Bootstrap ile offset classını kullanarak kolonları soldan sağa ittirebiliriz.
+                <br />
+                offset-md-3 class md ekranlarda soldan 3 birim kolonu kaydırır.
+            </div>
+        </div>
+        <p>
+            offset class ı her kırılım için 0 ile 11 arasında değer alır buna göre tasarımda kullanabiliriz.
+        </p>
+    </div>
+</body>
+</html>

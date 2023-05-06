@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap Form Elementleri</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap Form Elementleri</h1>
+        <p>
+            Kullanıcılardan veri almak için kullandığımız form elementleri için kullanılabilen bootstrap class ları
+        </p>
+        <form action="/" method="post">
+            <table>
+                <tr>
+                    <td>Kullanıcı Adı</td>
+                    <td>
+                        <input type="text" name="txtKullaniciAdi" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Şifre</td>
+                    <td>
+                        <input type="password" name="txtSifre" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="btnGiris" value="Giriş" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <h2>Bootstrap Uygulanmış Form</h2>
+        <form action="/" method="post">
+            <table class="table table-bordered w-50 m-auto">
+                <tr>
+                    <td>Kullanıcı Adı</td>
+                    <td>
+                        <input type="text" name="txtKullaniciAdi" value="" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Şifre</td>
+                    <td>
+                        <input type="password" name="txtSifre" value="" class="form-control" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="btnGiris" value="Giriş" class="btn btn-primary" />
+                        <input type="submit" name="btnGiris" value="Kayıt Ol" class="btn btn-secondary" />
+                        <input type="submit" name="btnGiris" value="Şifremi Unuttum" class="btn btn-danger" />
+                        <input type="submit" name="btnGiris" value="Destek" class="btn btn-info" />
+                        <input type="submit" name="btnGiris" value="Kaydet" class="btn btn-success" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Outline Butonlar</td>
+                    <td>
+                        <input type="submit" name="btnGiris" value="Giriş" class="btn btn-outline-primary" />
+                        <input type="submit" name="btnGiris" value="Kayıt Ol" class="btn btn-outline-secondary" />
+                        <input type="submit" name="btnGiris" value="Şifremi Unuttum" class="btn btn-outline-danger" />
+                        <input type="submit" name="btnGiris" value="Destek" class="btn btn-outline-info" />
+                        <input type="submit" name="btnGiris" value="Kaydet" class="btn btn-outline-success" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <hr />
+        <h3>A Elementlerinde Buton Tasarımı</h3>
+        <a href="#">Anasayfa</a>
+        <br />
+        <a href="#" class="btn btn-primary">Anasayfa</a>
+        <br />
+        <a href="#" class="btn btn-outline-primary">Hakkımızda</a>
+    </div>
+</body>
+</html>

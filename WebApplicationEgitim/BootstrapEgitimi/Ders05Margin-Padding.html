@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap Margin ve Padding</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Bootstrap Margin ve Padding Kullanımı</h1>
+        <h2>Margin-Dış Boşluk</h2>
+        <div class="row">
+            <div class="col-4">
+                Kolon 1
+            </div>
+            <div class="col-4 ms-auto">
+                Kolon 2 ms-auto classı margin start ın kısaltması css margin left e karşılık geliyor.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                Kolon 1
+            </div>
+            <div class="col-4 me-auto">
+                Kolon 2 me-auto classı margin end in kısaltması css margin right a karşılık geliyor. kolonu sola yapıştırır.
+            </div>
+            <div class="col-1">
+                kolon 3
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-2">
+                2 birimlik ilk kolon
+            </div>
+            <div class="col-3 ms-5">
+                2 birimlik 2. kolon ms-5 class ı uygulandı
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-2">
+                2 birimlik ilk kolon
+            </div>
+            <div class="col-3 ms-5 me-5">
+                2 birimlik 2. kolon ms-5 class ı uygulandı
+            </div>
+            <div class="col">
+                son kolon
+            </div>
+        </div>
+
+        <hr />
+        <p>
+            Bootstrap de bir kolona üstten margin vermek için mt-0 .. 5 arasında, <br />
+            alttan margin vermek için mb-0 .. 5 arasında <br />
+            soldan boşluk vermek için ms-0 ..5 arasında <br />
+            sağdan margin vermek için me-0 .. 5 arasında class verebiliriz
+        </p>
+        <p class="m-5">
+            eğer 4 yönden boşluk vereceksek m-0 .. 5 arasında değer ile class verebiliriz.
+        </p>
+
+        <p class="mx-5">
+            mx-5 classı uygulanan p soldan ve sağdan 5 birimlik margin
+        </p>
+        <p class="my-5">
+            my-5 classı uygulanan p üstten ve alttan 5 birimlik margin
+        </p>
+
+        <p class="p-5">
+            Padding işlemi için de m yerine p kullanılır.
+        </p>
+
+        <p class="px-5">
+            px-5 classı uygulanan p soldan ve sağdan 5 birimlik padding
+        </p>
+        <p class="py-5">
+            py-5 classı uygulanan p üstten ve alttan 5 birimlik padding
+        </p>
+        <div class="row">
+            <div class="col-2 mt-5 mb-3">
+                2 birimlik ilk kolon
+            </div>
+            <div class="col-3 ms-5 me-5">
+                2 birimlik 2. kolon ms-5 class ı uygulandı
+            </div>
+            <div class="col">
+                son kolon
+            </div>
+        </div>
+
+        <hr />
+
+        <h2>Bootstrap Metin Hizalama</h2>
+
+        <p class="text-center">
+            Yazı ve resim gibi içerikleri text class ı ile hizalarız.
+        </p>
+
+        <p class="text-center">
+            text-center : satırda ortala
+        </p>
+
+        <p class="text-end">
+            text-end : sağa hizala
+        </p>
+
+        <p class="text-start">
+            text-start : sola hizala
+        </p>
+
+        <p class="text-center">
+            <img src="../Images/google.png" />
+        </p>
+
+        <hr />
+
+        <h2>Resimleri Responsive Hale Getirme</h2>
+
+        <p>
+            Resim img elementlerini tarayıcı genişliğine göre ayarlamak için bootstrap de img class ları vardır.
+            <br />
+            img-fluid class ı tanımlarsak resim responsive olur.
+            <br />
+            img-thumbnail class ı dışı çizgili küçük resim için kullanılabilir.
+        </p>
+
+        <div class="row">
+            <div class="col-5">
+                <img src="../Images/Desktop-image.png" class="img-fluid" />
+            </div>
+            <div class="col-5">
+                <img src="../Images/Desktop-image.png" class="img-thumbnail" />
+            </div>
+        </div>
+
+        <p>
+            Boyutlandırma için w ile başlayan class ları da kullanabiliriz. % biriminden verilen sayı kadar genişlik uygulanır
+            <br />
+            w-25 : %25 <br />
+            w-50 : %50 <br />
+            w-75 : %75 <br />
+            w-100: %100 <br />
+        </p>
+        <div class="row">
+            <div class="col-5">
+                <img src="../Images/Desktop-image.png" class="w-100" />
+            </div>
+            <div class="col-5">
+                <img src="../Images/Desktop-image.png" class="w-75" />
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
