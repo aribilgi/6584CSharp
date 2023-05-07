@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Döngüler</title>
+</head>
+<body>
+    <h1>Javascript Döngüler</h1>
+    <h3>For Döngüsü</h3>
+    <script>
+        for (var i = 0; i < 5; i++) {
+            document.write("<h4>i nin değeri : " + i + "</h4>")
+        }
+    </script>
+
+    <hr />
+    <h3>While Döngüsü</h3>
+    <script>
+        var i = 0, toplam = 0;
+        while (i < 5) {
+            toplam += i;
+            document.write("<h5>i nin değeri : " + i + "</h5>")
+            i++;
+        }
+        document.write("<h5>toplam ın değeri : " + toplam + "</h5>")
+    </script>
+
+    <hr />
+    <h3>Do While Döngüsü</h3>
+    <script>
+        var sayi = 0, toplam = 0;
+
+        do {
+            document.write("<h5>toplam ın değeri : " + sayi + "</h5>")
+            sayi++;
+        } while (sayi < 5); // sayi nin değeri 5 den küçükken dönmeye devam et
+    </script>
+</body>
+</html>

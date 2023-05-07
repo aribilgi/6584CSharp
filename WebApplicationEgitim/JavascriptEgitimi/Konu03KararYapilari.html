@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Karar Yapıları</title>
+</head>
+<body>
+    <h1>Javascript Karar Yapıları</h1>
+    <p>
+        Programlama dillerindeki karar-koşul yapıları js de de mevcuttur.
+        <br />
+        Kod akışında if, else if, else ve switch case yapısını kullanabilmekteyiz.
+    </p>
+    <script>
+        var sayi = 10;
+        if (sayi > 0) {
+            console.log("Sayı Pozitif ", sayi);
+        }
+        else if (sayi < 0) {
+            console.log("Sayı Negatif ", sayi);
+        }
+        else {
+            console.log("Sayı 0 ", sayi);
+        }
+
+        // Ternary operatöürü ile 2 değer varsa hızlıca kontrol edebiliriz
+        sayi > 0 ? console.log("Sayı Pozitif", sayi) : console.log("Sayı Negatif ", sayi);
+
+        // Switch Case
+        switch (sayi) {
+            case 10: console.log("Sayı Pozitif", sayi)
+                break;
+            case -10: console.log("Sayı Negatif", sayi)
+                break;
+            default: console.log("Sayı 0 ", sayi)
+                break;
+        }
+
+        let kullaniciAdi = "Admin", sifre = "123";
+        if (kullaniciAdi == "Admin" && sifre == "1234") {
+            document.write("<h4>Hoşgeldin " + kullaniciAdi + "</h4>")
+        }
+        else {
+            document.write("<h4>Giriş Başarısız!</h4>")
+        }
+    </script>
+    
+</body>
+</html>

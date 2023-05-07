@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Giriş</title>
+    <script></script>
+</head>
+<body>
+    <h1>Javascript Giriş</h1>
+    <p>
+        Javascript tarayacı üzerinde çalışabilen bir programlama dilidir.
+    </p>
+    <p>
+        Javascript kodu yazarken pure veya native denilen ham Javascript kodu ile programlama yapabileceğimiz gibi sonradan Javascript ile geliştirilmiş bir çok kütüphaneyi kullanarak daha az kodla aynı Javascript işlemlerini yaptırabiliriz.
+    </p>
+    <p>
+        Javascript kütüphanelerinden en popülerleri Jquery ve Bootstrap örnek verilebilir.
+    </p>
+    <p>
+        Javascript ile web programlama, SPA(Single page application), mobil uygulama, oyun, masaüstü programlama gibi pek çok uygulama geliştirilebilir.
+    </p>
+    <p>
+        Son zamanlarda özellikle SPA(tek sayfalık uygulamalar) popülerdir bu alanda Angular(Google), React(Facebook) ve Vue(topluluk) js kütüphaneleri en sık kullanılanlardır.
+    </p>
+    <p>
+        Javascript ile Facebook un geliştirdiği React Native kütüphanesini kullanarak Mobil Uygulama geliştirebiliriz.
+    </p>
+    <p>
+        Javascript kodları herhangi bir sayfa içerisinde script taglarının arasına yazılır.
+        <br />
+        Sayfada head veya body dilediğimiz alanda Javascript yazabiliriz tarayıcılar script taglarını gördüğü anda kodları çalıştırır.
+    </p>
+    <script src="../Scripts/OzelJavascriptDosyasi.js"></script>
+    <script>
+        document.write("Bu yazı Javascript ile ekrana yazıldı")
+        document.writeln("<h3>Bu yazı Javascript ile ekrana yazıldı</h3>")
+        console.log("Bu yazı console.log ile tarayıcı konsoluna gönderildi"); // yorum için, console.log ile yazdırılan yazılar ekranda görünmez fakat tarayıcıların incele deyince açılan kısmında console sekmesinde görünür
+        console.error("hata mesajlarını konsole error metoduyla bastırabiliriz")
+        console.warn("bu yazı console.warn ile yazıldı")
+        // Javascript ile değişken tanımlama
+        // Any, number, string, undefined
+        var urunAdi, marka = "Casper"; var urunFiyati = 9999, kdv = 18;
+
+        console.log("Ürün Adı : ", urunAdi); // undefined : tanımsız
+        console.log("Ürün Marka : ", marka);
+        console.log("Ürün Fiyatı : ", urunFiyati);
+        console.log("Ürün Kdv : ", kdv);
+
+        console.warn("Meslek : ", meslek) // var ile tanımlanan değişkenler değer atanmadan çağrılırsa let gibi hata fırlatmaz undefined : tanımsız uyarısı verir kendinden sonraki kodlar işletilir.
+
+        // console.log("Kişi Bilgileri : Ad Soyad = ", isim + " " + soyisim); // let ile tanımlanmış değişkenleri değeri atanmadan önce çağırırsak ReferenceError hatası fırlatır ve kendinden sonraki kodları çalıştırmaz
+
+        // Let ile değişken tanımlama : let ile tanımlanan değişkenlerde bulunduğu blokta geçerli olma durumu vardır.
+        let isim; let soyisim; var meslek;
+        isim = "Ali"; soyisim = "Cengiz"; meslek = "Yazılımcı"
+        console.log("Kişi Bilgileri : Ad Soyad = ", isim + " " + soyisim);
+        console.warn("Meslek : ", meslek)
+
+        // Javascript Sabitler
+        // tanımlandıktan sonra değer ataması yapılıp değeri sonradan değiştirilemeyen sabitler kullanmak istersek const ile tanımlayabiliriz
+        const sabitDeger = "Bu veri sabittir sonradan değiştirilemez, değiştirilmesi teklif dahi edilemez :)";
+        console.warn("sabitDeger : ", sabitDeger)
+        sabitDeger = "yeni değer" // sabitDeger e yeni bir değer atamak istersek hata alırız!
+        /*
+            c# taki gibi çoklu yorum
+            satırı için bu alan kullanılabilir
+        */
+    </script>
+
+    <h3>Javascript Nesneler(Objects)</h3>
+    <p>
+        C# taki sınıflardan oluşturduğumuza benzer nesne oluşturma yapısıdır.
+    </p>
+    <script>
+        let araba = { marka: "Fiat", model: "Linea", yil: 2013, renk: "Beyaz" }; // nesneler süsülü parantezle oluşturulur
+        var kisi = { adi: "Alp", soyadi: "Arslan", yas: 18, meslek: "Kaldırım Mühendisi" };
+        console.log(araba); // dilersek nesneyi
+        console.log(araba.marka); // ya da nesne içindeki bir property i yazdırabiliriz
+
+        console.log(kisi);
+        console.log("Kişi Ad Soyad : ", kisi.adi + " " + kisi.soyadi);
+
+        document.writeln("<h5>Kişi Ad Soyad : " + kisi.adi + " " + kisi.soyadi + "</h5>")
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Fonksiyonlar</title>
+</head>
+<body>
+    <h1>Javascript Fonksiyonlar</h1>
+    <script>
+        // Fonksiyon tanımlama
+        function FonksiyonAdi(parametre) { // veri tipi belirlemeye gerek yok js de
+            console.log("Fonksiyon a gönderilen değer ", parametre);
+        }
+        //  Fonksiyon Kullanma
+        FonksiyonAdi("Javascript Fonksiyon Çağırma"); // fonksiyona parametre "" içerisinde gönderilir
+
+        // Örnek 2 void metot(geriye değer döndürmeyen)
+        function ToplamaYap(sayi1, sayi2) {
+            console.log("Sayıların Toplamı : ", sayi1 + sayi2);
+        }
+        ToplamaYap(10, 8)
+        ToplamaYap(10, "8")
+        // TypeScript : javascript tabanlı microsoft tarafından oluşturulan javascript tabanlı bir dildir. C# a benzer, class lar, interface ler ve güçlü veri tipi kontrolleri vardır
+        // TypeScript kullanan kütüphaneler vardır, angular gibi
+
+        // Örnek 3 Geriye değer döndüren metot
+        function cikarmaYap(sayi1, sayi2) {
+            return sayi1 - sayi2; // geriye değer döndürmek için return ifadesini kullanıyoruz
+        }
+        console.log("Sayıların Farkı : ", cikarmaYap(10, 8));
+
+        // Örnek 4 Sayfa arkaplan ve yazı rengini değiştirme
+        function RenkDegistir(arkaplanRengi, yaziRengi) {
+            document.bgColor = arkaplanRengi;
+            document.fgColor = yaziRengi;
+        }
+        RenkDegistir("red", "white");
+
+        console.log("Pencere İç Genişliği : ", window.innerWidth);
+        console.log("Pencere İç Yüksekliği : ", window.innerHeight);
+
+        console.log("Pencere Dış Genişliği : ", window.outerWidth);
+        console.log("Pencere Dış Yüksekliği : ", window.outerHeight);
+    </script>
+</body>
+</html>
