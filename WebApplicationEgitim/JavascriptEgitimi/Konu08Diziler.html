@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Diziler</title>
+</head>
+<body>
+    <h1>Javascript Diziler</h1>
+    <script>
+        var sayilar = [3, 5, 7, 9];
+        var toplam = 0;
+        for (var i in sayilar) {// js for in döngüsü dizideki elemanların index değerlerine ihtiyaç duyarsak kullanabileceğimiz döngüdür
+            toplam += sayilar[i]
+            document.write("i nin değeri : ", i, "-", sayilar[i], "<hr/>")
+        }
+        document.write("toplam ın değeri : ", toplam, "<hr/>")
+
+        for (var i of sayilar) { // js for of döngüsü c# taki foreach gibi çalışır, dizideki elemanları direk ekrana yazdırmak için
+            document.write("i : ", i, "<hr/>")
+        }
+
+        var arabalar = ["Fiat", "Peugeot", "Ferrari"]
+        let arac = arabalar[1]
+        document.write("<h3>Seçilen araç : ", arac, "</h3>")
+
+        var meyveler = new Array("Elma", "Armut", "Kiraz");
+
+        for (var i in meyveler) {
+            document.write(meyveler[i] + "<hr/>")
+        }
+        document.write("Listedeki ilk meyve : ", meyveler[0] + "<hr/>")
+
+        for (var meyve of meyveler) {
+            document.write(meyve.toUpperCase().bold() + "<hr/>")
+        }
+    </script>
+</body>
+</html>

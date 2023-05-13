@@ -111,6 +111,10 @@
     <Content Include="JavascriptEgitimi\Konu03KararYapilari.html" />
     <Content Include="JavascriptEgitimi\Konu04Donguler.html" />
     <Content Include="JavascriptEgitimi\Konu05Fonksiyonlar.html" />
+    <Content Include="JavascriptEgitimi\Konu06StringMetotlari.html" />
+    <Content Include="JavascriptEgitimi\Konu07Olaylar.html" />
+    <Content Include="JavascriptEgitimi\Konu08Diziler.html" />
+    <Content Include="JavascriptEgitimi\Konu09Seciciler.html" />
     <Content Include="MiniSite\index.html" />
     <Content Include="MiniSite\stil.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
