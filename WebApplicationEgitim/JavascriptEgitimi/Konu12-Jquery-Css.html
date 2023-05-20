@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery ve Javascript İle Css İşlemleri</title>
+    <script src="../Scripts/jquery-3.6.4.min.js"></script>
+    <style>
+        .baslik {
+            color: red;
+            font-size: larger;
+        }
+
+        .renk {
+            color: crimson
+        }
+
+        .brd {
+            border: 1px solid blue;
+            min-height: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery ve Javascript İle Css İşlemleri</h1>
+    <h3 id="jqilegizle">
+        Bu element jquery ile gizlenecek
+    </h3>
+    <h3 id="jsilegizle">
+        Bu element javascript ile gizlenecek
+    </h3>
+    <script>
+        //  Sayfadaki elementleri gizleme
+        $("#jqilegizle").hide()
+        document.getElementById("jsilegizle").style.display = "none"
+        //  Sayfadaki elementleri gösterme
+        $("#jqilegizle").show()
+        document.getElementById("jsilegizle").style.display = ""
+    </script>
+
+    <hr />
+    <h2>Elementlerin Css Lerini Değiştirme</h2>
+    <div id="jqsekillendir" class="renk test brd">
+        Elementlerin Css Lerini Değiştirme
+    </div>
+    <hr />
+    <div id="jssekillendir" class="jssekil test brd">
+        Elementlerin Css Lerini Değiştirme
+    </div>
+    <script>
+        // jquery ile elementlere inline css verme
+        $("#jqsekillendir").css("font-size", "34px")
+        $("#jqsekillendir").css("padding", "34px")
+        // jquery ile elementlere class ekleme çıkarma
+        $("h2:first").addClass("baslik")
+        $("#jqsekillendir").addClass("jsclass deneme") // birden fazla class ekleyebiliriz
+        $("#jqsekillendir").removeClass("renk") // class silme
+
+        // Javascript ile Css Verme
+        document.getElementById("jssekillendir").style.color = "blue"
+        document.getElementById("jssekillendir").style.padding = "1rem"
+        document.getElementById("jssekillendir").style.margin = "1rem"
+
+        // Javascript ile class ekleme çıkarma
+        document.getElementById("jssekillendir").classList.add("baslik")
+        document.getElementById("jssekillendir").classList.remove("test")
+    </script>
+</body>
+</html>

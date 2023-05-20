@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery ile Html ve Metin İşlemleri</title>
+    <script src="../Scripts/jquery-3.6.4.js"></script>
+</head>
+<body>
+    <h1>Jquery ile Html ve Metin İşlemleri</h1>
+    <h2>Metin İçeriğini Değiştirme</h2>
+    <p id="degistir"></p>
+    <p id="jsiledegistir"></p>
+    <script>
+        // $(function() ile $(document).ready(function () aynı işi yapar, belge hazır olduğunda kodlar çalışır.
+        $(function () {
+            var secilecekEleman = $("#degistir");
+            secilecekEleman.text("degistir id li elementin içeriği jquery text metoduyla değiştirildi");
+            // element içeriğini javascript ile değiştirme
+            var secilecekEleman2 = document.getElementById("jsiledegistir");
+            secilecekEleman2.textContent = "bu elementin içeriği javascript ile değiştirildi";
+        })
+    </script>
+
+    <hr />
+    <h2>Metin İçeriğini Alma</h2>
+    <p id="jqileal">jqileal</p>
+    <p id="jsileal">jsileal</p>
+    <h3 id="jqmetin"></h3>
+    <h3 id="jsmetin"></h3>
+    <script>
+        // Elementin metin içeriğini jquery ile alma
+        var yazi = $("#jqileal").text()
+        $("#jqmetin").text(yazi) // jquery ile elemete yazı yazdırma
+        // Js ile metin alma
+        var metin = document.getElementById("jsileal").textContent
+        document.getElementById("jsmetin").textContent = metin // js ile elemete yazı yazdırma
+    </script>
+
+    <hr />
+    <h2>Elementlere İçerikleri HTML Olarak Ekleme</h2>
+    <div id="texticerik"></div>
+    <div id="htmlicerik"></div>
+    <div id="jstexticerik"></div>
+    <div id="jsinnertexticerik"></div>
+    <div id="jshtmlicerik"></div>
+    <script>
+        // Jquery İle
+        $("#texticerik").text("<h2>Elementlere İçerikleri HTML Olarak Ekleme</h2>")
+        $("#htmlicerik").html("<h2>Elementlere İçerikleri HTML Olarak Ekleme</h2>")
+        // Js ile
+        document.getElementById("jstexticerik").textContent = "<h2>Elementlere İçerikleri HTML Olarak Ekleme</h2>"
+        document.getElementById("jsinnertexticerik").innerText = "<h2>Elementlere İçerikleri HTML Olarak Ekleme</h2>"
+        document.getElementById("jshtmlicerik").innerHTML += "<h2>Elementlere İçerikleri HTML Olarak Ekleme</h2>"
+    </script>
+
+    <hr />
+    <h2>Elementlerin HTML İçeriklerini Alma</h2>
+    <h3>Jquery İle Alma</h3>
+    <div id="jqueryileal"></div>
+    <h3>Javascript İle Alma</h3>
+    <div id="Javascriptileal"></div>
+    <script>
+        // Jquery İle
+        var icerik = $("#htmlicerik").html()
+        $("#jqueryileal").html(icerik)
+        // Js ile
+        var content = document.getElementById("jshtmlicerik").innerHTML
+        document.getElementById("Javascriptileal").innerHTML = content
+    </script>
+</body>
+</html>

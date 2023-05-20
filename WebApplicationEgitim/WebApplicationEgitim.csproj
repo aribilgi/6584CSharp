@@ -115,6 +115,10 @@
     <Content Include="JavascriptEgitimi\Konu07Olaylar.html" />
     <Content Include="JavascriptEgitimi\Konu08Diziler.html" />
     <Content Include="JavascriptEgitimi\Konu09Seciciler.html" />
+    <Content Include="JavascriptEgitimi\Konu10-JquerySeciciler.html" />
+    <Content Include="JavascriptEgitimi\Konu11-Jquery-Html.html" />
+    <Content Include="JavascriptEgitimi\Konu12-Jquery-Css.html" />
+    <Content Include="JavascriptEgitimi\Konu13-Jquery-DOM.html" />
     <Content Include="MiniSite\index.html" />
     <Content Include="MiniSite\stil.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -123,6 +127,12 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.6.4.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.4.js" />
+    <Content Include="Scripts\jquery-3.6.4.min.js" />
+    <Content Include="Scripts\jquery-3.6.4.slim.js" />
+    <Content Include="Scripts\jquery-3.6.4.slim.min.js" />
+    <Content Include="Scripts\jquery-3.7.0.min.js" />
     <Content Include="Scripts\OzelJavascriptDosyasi.js" />
     <Content Include="Stil.css" />
     <Content Include="Web.config" />
@@ -169,6 +179,8 @@
     <Content Include="Scripts\bootstrap.esm.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.6.4.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
