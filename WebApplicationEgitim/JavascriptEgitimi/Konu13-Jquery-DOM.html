@@ -87,7 +87,33 @@
     <input type="button" id="button4" value="Html Elementi Sil" />
     <script>
         $("#button4").click(function () {
-            $("#silinecek").remove() // elementi sil
+            // $("#silinecek").remove() // elementi sil
+            // $("#silinecek").empty() // elementin içini boşalt
+
+            // Javascript ile silme
+            document.getElementById("silinecek").remove()
+        })
+    </script>
+
+    <hr />
+    <h2>Jquery ile Change Olayı Yakalama</h2>
+    <input type="text" id="degisim" />
+    <h3 id="jqchange"></h3>
+    <p>
+        <h4>Kategoriler</h4>
+        <select class="degisim">
+            <option value="">Seçiniz</option>
+            <option value="Elektronik">Elektronik</option>
+            <option value="Bilgisayar">Bilgisayar</option>
+            <option value="Telefon">Telefon</option>
+        </select>
+    </p>
+    <script>
+        $(".degisim").change(function () { // class ı degisim olan elementte değişim olduğunda
+            $("#jqchange").html($(this).val()) // id si jqchange olan elemente html içerik olarak degisim class lı elemetten seçilen değeri yaz
+        })
+        $("#degisim").change(function () {
+            $("#jqchange").text($(this).val())
         })
     </script>
 </body>

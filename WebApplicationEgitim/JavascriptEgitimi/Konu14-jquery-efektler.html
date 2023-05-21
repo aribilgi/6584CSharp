@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery de Efektler</title>
+    <script src="../Scripts/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h1>Jquery de Efektler</h1>
+    <input type="button" id="buton1" value="Fade out" />
+    <input type="button" id="buton2" value="Fade in" />
+    <input type="button" id="buton3" value="Fade to" />
+    <button id="buton4">Fade Toggle</button>
+
+    <div id="box" style="background-color:green; height:100px; width:100px; margin:1rem; padding: 1rem; color:beige">
+        <h2>Jquery de Efekt kullanımı</h2>
+    </div>
+
+    <script>
+        $("#buton1").click(function() {
+            $("h1").fadeOut()
+            $("#box").delay("slow").fadeOut()
+        })
+        $("#buton2").click(function() {
+            $("h1").fadeIn()
+            $("#box").delay("slow").fadeIn()
+        })
+        $("#buton3").click(function() {
+            $("#box").fadeTo(1000, 0.3) // 1. parametre ms olarak hız, 2. parametre opacity
+        })
+        $("#buton4").click(function () {
+            $("#box").fadeToggle(1800) // butona her basışta gizle veya göster
+        })
+    </script>
+    <input type="button" id="buton5" value="Yükseklik animasyonu" />
+    <input type="button" id="buton6" value="animasyonu sıfırla" />
+    <script>
+        $("#buton5").click(function () {
+            $("#box").animate({ "height": "200px"}) // butona her basışta gizle veya göster
+        })
+        $("#buton6").click(function () {
+            $("#box").animate({ height: "100px"}) // butona her basışta gizle veya göster
+        })
+    </script>
+</body>
+</html>

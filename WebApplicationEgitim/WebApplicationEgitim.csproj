@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ajaxicerik.txt" />
     <Content Include="anasayfa.html" />
     <Content Include="BootstrapEgitimi\Ders01Giris.html" />
     <Content Include="BootstrapEgitimi\Ders02SatirveSutunKullanimi.html" />
@@ -79,6 +80,9 @@
     <Content Include="BootstrapEgitimi\Ders09RenkClasslari.html" />
     <Content Include="BootstrapEgitimi\Ders10Listeler.html" />
     <Content Include="BootstrapEgitimi\Ders11Komponentler.html" />
+    <Content Include="BootstrapSite\carousel.html" />
+    <Content Include="BootstrapSite\iletisim.html" />
+    <Content Include="BootstrapSite\index.html" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -119,6 +123,8 @@
     <Content Include="JavascriptEgitimi\Konu11-Jquery-Html.html" />
     <Content Include="JavascriptEgitimi\Konu12-Jquery-Css.html" />
     <Content Include="JavascriptEgitimi\Konu13-Jquery-DOM.html" />
+    <Content Include="JavascriptEgitimi\Konu14-jquery-efektler.html" />
+    <Content Include="JavascriptEgitimi\Konu15-jquery-ajax.html" />
     <Content Include="MiniSite\index.html" />
     <Content Include="MiniSite\stil.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
