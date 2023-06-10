@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "MVC01 Razor Syntax";
+    string adi = "Alp", soyadi = "Arslan";
+    string[] isimler = new[] { "Ali", "Veli", "Deniz" };
+    // @ ifadesinden sonra süslü parantez açıp kaparsak bu blokta istediğimiz kadar c# kodu yazabiliriz.
+}
+
+<h2>MVC01 Razor Syntax</h2>
+
+<p>
+    MVC de view ekranlarında değişken oluşturma kullanma, döngüler vb gibi c# işlemlerini yazabildiğimiz kod yapısına razor syntax ı denir.
+</p>
+
+<p>
+    MVC de c# kodu yazdığımız razor syntax ı at@ile yazılır.
+    at ifadesini görür görmez visual studio yazabileceğimiz c# kodlarını açar.
+</p>
+
+<h3>Kişi Bilgileri</h3>
+
+<h5>Adı Soyadı : @adi @soyadi</h5>
+
+<h3>İsimler</h3>
+
+@foreach (var isim in isimler)
+{
+    <h5>@isim</h5>
+}

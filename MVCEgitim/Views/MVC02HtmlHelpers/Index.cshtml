@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "MVC02 Html Helpers";
+}
+
+<h2>MVC02 Html Helpers</h2>
+
+<p>
+    Mvc de ekrana html elementleri oluşturmak için kullanılan hazır bir yapıdır.
+</p>
+
+@Html.ActionLink("Anasayfa", "Index")
+
+@Html.ActionLink("Anasayfa", "Index", "Home")
+
+@Html.ActionLink("Hakkımızda", "About", "Home")
+
+@Html.ActionLink("İletişim", "Contact", "Home")
+
+@Html.ActionLink("MVC 01 Razor Syntax", "Index", "MVC01RazorSyntax")
+
+<a href="/MVC01RazorSyntax">MVC 01 Razor Syntax</a>
+
+<h4>Html CheckBox</h4>
+
+@Html.CheckBox("Onay") Onaylıyorum
+
+<h4>Html TextBox</h4>
+
+@Html.TextBox("txtAd") Ekranda veri giriş kutusu (input) oluşturur
+<input type="text" name="txtName" value="" />
+
+<h3>Html Hidden</h3>
+
+@Html.Hidden("hfGizliElement", "ekranda kullanıcının görmeyeceği değer saklamak için")
+<p>
+    ekranda kullanıcının görmeyeceği değer saklamak için
+</p>
+
+<h3>Html Label</h3>
+
+@Html.Label("lblAd", "Html Label Elementi")
+
+<h3>Html TextArea - Çok satırlı input</h3>
+
+@Html.TextArea("txtAdres", "Html TextArea - Çok satırlı input")
+
+<h3>Html Password - Şifre giriş elementi</h3>
+
+@Html.Password("txtPassword")
+
+<hr />
+
+<h3>Html Helper İle Form Oluşturma</h3>
+
+@using (Html.BeginForm())
+{
+    <h4>Kullanıcı Adı:</h4>
+    @Html.Editor("txtKullaniciAdi")
+    <h4>Şifre:</h4>
+    @Html.Password("txtSifre")
+    <br />
+    <input type="submit" value="Giriş" />
+}
+
+<hr />
+
+<form action="/MVC02HtmlHelpers" method="get">
+    @Html.Editor("txtAra")
+</form>
+
+<hr />
+
+<h3>Html Listbox ve dropdownlist Kullanımı</h3>
+
+@{
+    SelectListItem[] liste = new SelectListItem[]{
+        new SelectListItem() { Text = "Bilgisayar" },
+        new SelectListItem() { Text = "Elektronik" },
+        new SelectListItem() { Text = "Telefon" }
+    };
+    string htmlRawOrnek = "Html Raw İle Ekrana <b>Html İçerik</b> Yazdırma";
+}
+<h6>Listbox</h6>
+@Html.ListBox("lbListe", liste)
+<h6>Dropdownlist</h6>
+@Html.DropDownList("ddlListe", liste)
+
+<hr />
+
+<h3>RadioButton Elementi</h3>
+
+@Html.RadioButton("rbOnay", "Onaylıyorum") Sözleşmeyi Onaylıyorum
+
+<h3>Html Raw İle Ekrana Html İçerik Yazdırma</h3>
+
+@htmlRawOrnek
+
+<hr />
+
+@Html.Raw(htmlRawOrnek)
+
+<hr />
+
+@Html.Raw("Html Raw İle Ekrana <b style='color:red'>Html İçerik</b> Yazdırma")
