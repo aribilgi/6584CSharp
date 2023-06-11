@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "MVC Section Kullanımı";
+}
+
+<h2>MVC Section Kullanımı</h2>
+
+<p>
+    Sayfalardan layout şablonuna html, css veya js kodları göndermemizi sağlayan yapıya section denir.
+    ekrana at ifadesinden sonra section yazıp layout daki section adını belirterek kullanılır!
+</p>
+
+<p>
+    varsayılan olarak layout da RenderSection metodu vardır ve biz alt sayfadan bu alana js kodu gönderebiliriz bu yapı ile.
+</p>
+
+@section scripts{
+    @*<script>alert('Bu mesaj section a gönderildi!')</script>*@
+    <script>console.log('Bu mesaj section a gönderildi!')</script>
+}
+
+@section ozelicerik
+{
+    <section class="display-3">
+        Bu içerik ozelicerik section una gönderildi
+    </section>
+}
+
+@section ozelcss
+{
+    <style>
+        body {
+            background-color: red;
+            color: white;
+        }
+    </style>
+}

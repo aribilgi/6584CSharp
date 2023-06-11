@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("ozelcss", required: false)
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
@@ -19,9 +20,14 @@
                 <ul class="navbar-nav flex-grow-1">
                     <li>@Html.ActionLink("Anasayfa", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
 
-                    <li>@Html.ActionLink("RazorSyntax", "Index", "MVC01RazorSyntax", new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("HtmlHelpers", "Index", "MVC02HtmlHelpers", new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("DataTransfer", "Index", "MVC03DataTransfer", new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("RazorSyntax", "Index", "MVC01RazorSyntax", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("HtmlHelpers", "Index", "MVC02HtmlHelpers", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("DataTransfer", "Index", "MVC03DataTransfer", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>
+                        @*burası MVC yorum satırı*@
+                        <a href="/MVC04ModelBinding" class="nav-link">ModelBinding</a>
+                    </li>
+                    @Html.Partial("_PartialMenu")
                 </ul>
             </div>
         </div>
@@ -32,6 +38,7 @@
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
+        @RenderSection("ozelicerik", required: false)
     </div>
 
     @Scripts.Render("~/bundles/jquery")

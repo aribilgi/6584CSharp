@@ -1,0 +1,55 @@
+﻿@model MVCEgitim.Models.KullaniciSayfasiViewModel
+
+@{
+    ViewBag.Title = "Kullanici Sayfasi";
+}
+
+<h2>Kullanici Sayfasi</h2>
+
+<p>
+    MVC de 1 sayfada sadece 1 model class ı kullanımına izin vardır!!
+</p>
+
+<p>
+    Eğer 1 den fazla model class ı kullanmak istersek ayrı bir view model class ı yapıp bu class içerisine istediğimiz kadar model class ı ekleyip sayfada da bu view model classını çağırarak içindeki istediğimiz alt model classını ekranda kullanabiliriz.
+</p>
+
+
+<h3>Kullanıcı Bilgilerini Ekranda Gösterme</h3>
+<table class="table">
+    <tr>
+        <td>Ad</td>
+        <td>@Model.Kullanici.Ad</td>
+    </tr>
+    <tr>
+        <td>Soyad</td>
+        <td>@Model.Kullanici.Soyad</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>@Model.Kullanici.Email</td>
+    </tr>
+    <tr>
+        <td>Kullanici Adı</td>
+        <td>@Model.Kullanici.KullaniciAdi</td>
+    </tr>
+    <tr>
+        <td>Şifre</td>
+        <td>@Model.Kullanici.Sifre</td>
+    </tr>
+</table>
+<hr />
+<table class="table">
+    <tr>
+        <td>İlçe</td>
+        <td>@Model.Adres.Ilce</td>
+    </tr>
+    <tr>
+        <td>Şehir</td>
+        <td>@Model.Adres.Sehir</td>
+    </tr>
+    <tr>
+        <td>Açık Adres</td>
+        <td>@Model.Adres.AcikAdres</td>
+    </tr>
+</table>

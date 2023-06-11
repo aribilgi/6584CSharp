@@ -1,0 +1,68 @@
+﻿@model MVCEgitim.Models.Kullanici
+@{
+    ViewBag.Title = "Kullanici";
+    // Mvc de bir sayfada model class ı kullanabilmek için sayfanın en üstüne @model classadi şeklinde tanımlama yapmalıyız
+    // Sayfaya tanımladığımız model i aşağıda kullanmak için ilk harfi büyük @Model.ClassAdi şeklinde çağırmalıyız
+}
+
+<h2>Kullanici</h2>
+
+<p>controller dan model class ını dolu yollamadan ekranda kullanmak istersek hata alırız!</p>
+
+<h3>Kullanıcı Bilgilerini Ekranda Gösterme</h3>
+<table class="table">
+    <tr>
+        <td>Ad</td>
+        <td>@Model.Ad</td>
+    </tr>
+    <tr>
+        <td>Soyad</td>
+        <td>@Model.Soyad</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <td>Kullanici Adı</td>
+        <td>@Model.KullaniciAdi</td>
+    </tr>
+    <tr>
+        <td>Şifre</td>
+        <td>@Model.Sifre</td>
+    </tr>
+</table>
+
+<hr />
+
+<h3>Kullanıcı Bilgilerini Düzenleme</h3>
+<form action="/MVC04ModelBinding/KullaniciBilgi" method="post">
+    <table class="table">
+        <tr>
+            <td>Ad</td>
+            <td>@Html.TextBoxFor(model => model.Ad)</td>
+        </tr>
+        <tr>
+            <td>Soyad</td>
+            <td>@Html.TextBoxFor(model => model.Soyad)</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>@Html.EditorFor(model => model.Email)</td>
+        </tr>
+        <tr>
+            <td>Kullanici Adı</td>
+            <td>@Html.TextBoxFor(model => model.KullaniciAdi)</td>
+        </tr>
+        <tr>
+            <td>Şifre</td>
+            <td>@Html.TextBoxFor(model => model.Sifre)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" class="btn btn-success" value="Kaydet" />
+            </td>
+        </tr>
+    </table>
+</form>

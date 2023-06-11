@@ -124,9 +124,17 @@
     <Compile Include="Controllers\MVC01RazorSyntaxController.cs" />
     <Compile Include="Controllers\MVC02HtmlHelpersController.cs" />
     <Compile Include="Controllers\MVC03DataTransferController.cs" />
+    <Compile Include="Controllers\MVC04ModelBindingController.cs" />
+    <Compile Include="Controllers\MVC05ModelValidationController.cs" />
+    <Compile Include="Controllers\MVC06SectionController.cs" />
+    <Compile Include="Controllers\MVC07PartialController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Adres.cs" />
+    <Compile Include="Models\Kullanici.cs" />
+    <Compile Include="Models\KullaniciSayfasiViewModel.cs" />
+    <Compile Include="Models\Uye.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,10 +191,19 @@
     <Content Include="Views\MVC01RazorSyntax\Index.cshtml" />
     <Content Include="Views\MVC02HtmlHelpers\Index.cshtml" />
     <Content Include="Views\MVC03DataTransfer\Index.cshtml" />
+    <Content Include="Views\MVC04ModelBinding\KullaniciBilgi.cshtml" />
+    <Content Include="Views\MVC04ModelBinding\Index.cshtml" />
+    <Content Include="Views\MVC04ModelBinding\AdresBilgi.cshtml" />
+    <Content Include="Views\MVC04ModelBinding\KullaniciSayfasi.cshtml" />
+    <Content Include="Views\MVC05ModelValidation\Index.cshtml" />
+    <Content Include="Views\MVC05ModelValidation\UyeListesi.cshtml" />
+    <Content Include="Views\MVC05ModelValidation\Create.cshtml" />
+    <Content Include="Views\MVC06Section\Index.cshtml" />
+    <Content Include="Views\MVC07Partial\Index.cshtml" />
+    <Content Include="Views\Shared\_PartialMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

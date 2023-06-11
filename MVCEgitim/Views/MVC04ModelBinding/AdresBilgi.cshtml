@@ -1,0 +1,30 @@
+﻿@model MVCEgitim.Models.Adres
+@{
+    ViewBag.Title = "Adres Bilgi";
+}
+
+<h2>Adres Bilgi</h2>
+
+@using (Html.BeginForm())
+{
+    <table class="table">
+        <tr>
+            <td>İlçe</td>
+            <td>@Html.TextBoxFor(model => model.Ilce)</td>
+        </tr>
+        <tr>
+            <td>Şehir</td>
+            <td>@Html.TextBoxFor(model => model.Sehir)</td>
+        </tr>
+        <tr>
+            <td>Açık Adres</td>
+            <td>@Html.TextAreaFor(model => model.AcikAdres)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" class="btn btn-success" value="Kaydet" />
+            </td>
+        </tr>
+    </table>
+}
