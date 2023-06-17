@@ -9,3 +9,27 @@
     MVC de Controller da kullandığımız ActionResult metotları sadece tek bir işlev görmez birden fazla işlem yapar bunlar;
 </p>
 
+<h4>Controller daki FarkliViewDondur Metodunu Çalıştırma</h4>
+
+@Html.ActionLink("MVC View Results Çeşitleri", "Index")
+<hr />
+@Html.ActionLink("Farkli View Dondur", "FarkliViewDondur")
+<hr />
+@Html.ActionLink("Yönlendir", "Yonlendir")
+<hr />
+@Html.ActionLink("Actiona Yonlendir", "ActionaYonlendir")
+<hr />
+@Html.ActionLink("Route Yonlendir", "RouteYonlendir")
+<hr />
+@Html.Action("KategorileriGetirPartial")
+<hr />
+@Html.Action("KategorileriModelleGetir")
+<hr />
+@Html.ActionLink("JsResult", "JsResult")
+
+@*<script src="/MVC08ViewResults/JsResult"></script>*@
+
+<hr />
+@Html.ActionLink("Json Result", "JsonResult")
+<hr />
+@Html.ActionLink("Xml Content Result", "XmlContentResult")

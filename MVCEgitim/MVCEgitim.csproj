@@ -129,6 +129,8 @@
     <Compile Include="Controllers\MVC06SectionController.cs" />
     <Compile Include="Controllers\MVC07PartialController.cs" />
     <Compile Include="Controllers\MVC08ViewResultsController.cs" />
+    <Compile Include="Controllers\MVC09FileUploadController.cs" />
+    <Compile Include="Controllers\MVC10CookieController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,9 +205,13 @@
     <Content Include="Views\MVC07Partial\Index.cshtml" />
     <Content Include="Views\Shared\_PartialMenu.cshtml" />
     <Content Include="Views\MVC08ViewResults\Index.cshtml" />
+    <Content Include="Views\Shared\KategorileriModelleGetir.cshtml" />
+    <Content Include="Views\MVC09FileUpload\Index.cshtml" />
+    <Content Include="Views\MVC10Cookie\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

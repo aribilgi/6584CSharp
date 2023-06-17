@@ -1,0 +1,10 @@
+﻿@model List<string>
+
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li>
+            <a href="/MVC08ViewResults?kategori=@item" class="nav-link">@item</a>
+        </li>
+    }
+</ul>

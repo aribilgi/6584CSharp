@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "MVC File Upload - Dosya Yükleme";
+}
+
+<h2>MVC File Upload - Dosya Yükleme</h2>
+
+<p>
+    Mvc de dosya yükleme için form içerisine type ı file olan bir input ekliyoruz.
+    <br />
+    Form elementine enctype="multipart/form-data" attribut ünü ekliyoruz yoksa dosya yükleyemeyiz!
+    <br />
+    type ı file olan input a bir name değeri verip controller da bu isimle yüklenen dosyayı yakalıyoruz!
+    <br />
+    Resim yüklemek için projeye bir klasör açıyoruz
+</p>
+
+<form action="/MVC09FileUpload" method="post" enctype="multipart/form-data">
+    <input type="file" name="dosya" id="fileup" />
+    <input type="submit" value="Yükle" />
+</form>
+<br />
+@ViewData["message"]
+<img src="/Images/@ViewBag.ResimAdi" alt="Resim yok" />
