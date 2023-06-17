@@ -128,6 +128,7 @@
     <Compile Include="Controllers\MVC05ModelValidationController.cs" />
     <Compile Include="Controllers\MVC06SectionController.cs" />
     <Compile Include="Controllers\MVC07PartialController.cs" />
+    <Compile Include="Controllers\MVC08ViewResultsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -201,6 +202,7 @@
     <Content Include="Views\MVC06Section\Index.cshtml" />
     <Content Include="Views\MVC07Partial\Index.cshtml" />
     <Content Include="Views\Shared\_PartialMenu.cshtml" />
+    <Content Include="Views\MVC08ViewResults\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
