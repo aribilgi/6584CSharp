@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Cookie Oku";
+}
+
+<h2>Cookie Oku</h2>
+
+<h3>@TempData["kullaniciadi"]</h3>
+
+<h4>View Sayfasında Cookie ye Direk Erişme</h4>
+
+<p>
+    @if (HttpContext.Current.Request.Cookies["username"] != null)
+    {
+        @HttpContext.Current.Request.Cookies["username"].Value
+    }
+    else
+    {
+        @:<b>Cookie boş!</b>
+    }
+</p>

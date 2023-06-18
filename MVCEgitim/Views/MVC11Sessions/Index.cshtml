@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "MVC Sessions - Oturum Yönetimi";
+}
+
+<h2>MVC Sessions - Oturum Yönetimi</h2>
+
+<p>
+    Cookie ler kullnıcıların tarayıcılarında saklanan küçük çerezlerdi, Session yapısı ise daha güvenli veri saklamak için cookie nin yaptığını sunucu-server da yapan sistemdir. Server da kullanıcıyı tanımlamak için veya sayfalar arasında gizli veri taşımak için kullanılır.
+</p>
+
+<h3>Session Oluştur</h3>
+
+@if (HttpContext.Current.Session["deger"] != null)
+{
+    <p>
+        Hoşgeldin <b>@HttpContext.Current.Session["deger"]</b>
+        <a class="btn btn-danger" href="/MVC11Sessions/SessionSil">Oturumu Kapat</a>
+    </p>
+}
+else
+{
+    <form action="/MVC11Sessions/SessionOlustur" method="post">
+        <input type="text" name="kullaniciAdi" placeholder="Kullanıcı Adı" />
+        <input type="text" name="sifre" placeholder="Şifre" />
+        <br />
+        <input type="submit" value="Giriş" class="btn btn-primary" />
+    </form>
+}
+
+@Html.Raw(TempData["mesaj"])
+
+<a href="/MVC11Sessions/SessionOku">Session Oku</a>

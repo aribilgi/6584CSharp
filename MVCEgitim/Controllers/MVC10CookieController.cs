@@ -20,6 +20,24 @@ namespace MVCEgitim.Controllers
                 Expires = DateTime.Now.AddMinutes(1) // bu çereze 1 dk yaşam süresi verdik sonrasında çerez yok olur.
             };
             HttpContext.Response.Cookies.Add(cookie); // çerezi kullanıcının tarayıcısına ekledik
+            TempData["mesaj"] = "<div class='alert alert-success'>Cookie Oluşturuldu!</div>";
+            return RedirectToAction("Index");
+        }
+        public ActionResult CookieOku()
+        {
+            if (HttpContext.Request.Cookies["username"] != null)
+            {
+                TempData["kullaniciadi"] = HttpContext.Request.Cookies["username"].Value; // uygulamanın oluşturduğu cookie yi okuyup tempdata ile ekrana yolluyoruz
+            }
+            return View();
+        }
+        public ActionResult CookieSil()
+        {
+            if (HttpContext.Request.Cookies["username"] != null)
+            {
+                HttpContext.Response.Cookies["username"].Expires = DateTime.Now.AddSeconds(-1);
+            }
+            TempData["mesaj"] = "<div class='alert alert-danger'>Cookie Silindi!</div>";
             return RedirectToAction("Index");
         }
     }
